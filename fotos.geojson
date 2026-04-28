@@ -1,0 +1,2165 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.4607205,
+          -12.8776358
+        ]
+      },
+      "properties": {
+        "arquivo_original": "Faz Jacupiranga_28042026_085029.jpg",
+        "arquivo_polaroid": "Faz Jacupiranga_28042026_085029_polaroid.jpg",
+        "tipo": "GENERICA_COM_GPS",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 644.017094017094,
+        "data_hora": "28/04/2026 08:50"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.4607295,
+          -12.8776173
+        ]
+      },
+      "properties": {
+        "arquivo_original": "Faz Jacupiranga_28042026_085039.jpg",
+        "arquivo_polaroid": "Faz Jacupiranga_28042026_085039_polaroid.jpg",
+        "tipo": "GENERICA_COM_GPS",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 644.208988764045,
+        "data_hora": "28/04/2026 08:50"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.461951000000006,
+          -12.876706200000001
+        ]
+      },
+      "properties": {
+        "arquivo_original": "Faz Jacupiranga_28042026_085213.jpg",
+        "arquivo_polaroid": "Faz Jacupiranga_28042026_085213_polaroid.jpg",
+        "tipo": "GENERICA_COM_GPS",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 593.9456790123456,
+        "data_hora": "28/04/2026 08:52"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.4578196,
+          -12.8685507
+        ]
+      },
+      "properties": {
+        "arquivo_original": "Faz Jacupiranga_28042026_091025.jpg",
+        "arquivo_polaroid": "Faz Jacupiranga_28042026_091025_polaroid.jpg",
+        "tipo": "GENERICA_COM_GPS",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 547.5595667870036,
+        "data_hora": "28/04/2026 09:10"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.457814400000004,
+          -12.8685519
+        ]
+      },
+      "properties": {
+        "arquivo_original": "Faz Jacupiranga_28042026_091041.jpg",
+        "arquivo_polaroid": "Faz Jacupiranga_28042026_091041_polaroid.jpg",
+        "tipo": "GENERICA_COM_GPS",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 547.5706806282723,
+        "data_hora": "28/04/2026 09:10"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.4578125,
+          -12.8685452
+        ]
+      },
+      "properties": {
+        "arquivo_original": "Faz Jacupiranga_28042026_091055.jpg",
+        "arquivo_polaroid": "Faz Jacupiranga_28042026_091055_polaroid.jpg",
+        "tipo": "GENERICA_COM_GPS",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 549.013671875,
+        "data_hora": "28/04/2026 09:10"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.4580275,
+          -12.8684844
+        ]
+      },
+      "properties": {
+        "arquivo_original": "Faz Jacupiranga_28042026_091235.jpg",
+        "arquivo_polaroid": "Faz Jacupiranga_28042026_091235_polaroid.jpg",
+        "tipo": "GENERICA_COM_GPS",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 545.9683794466404,
+        "data_hora": "28/04/2026 09:12"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.458002900000004,
+          -12.8684063
+        ]
+      },
+      "properties": {
+        "arquivo_original": "Faz Jacupiranga_28042026_091317.jpg",
+        "arquivo_polaroid": "Faz Jacupiranga_28042026_091317_polaroid.jpg",
+        "tipo": "GENERICA_COM_GPS",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 547.1351351351351,
+        "data_hora": "28/04/2026 09:13"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.4580039,
+          -12.8684198
+        ]
+      },
+      "properties": {
+        "arquivo_original": "Faz Jacupiranga_28042026_091324.jpg",
+        "arquivo_polaroid": "Faz Jacupiranga_28042026_091324_polaroid.jpg",
+        "tipo": "GENERICA_COM_GPS",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 547.3874538745388,
+        "data_hora": "28/04/2026 09:13"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.458047400000005,
+          -12.8681635
+        ]
+      },
+      "properties": {
+        "arquivo_original": "Faz Jacupiranga_28042026_091417.jpg",
+        "arquivo_polaroid": "Faz Jacupiranga_28042026_091417_polaroid.jpg",
+        "tipo": "GENERICA_COM_GPS",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 545.1052244297277,
+        "data_hora": "28/04/2026 09:14"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.458048000000005,
+          -12.8681842
+        ]
+      },
+      "properties": {
+        "arquivo_original": "Faz Jacupiranga_28042026_091423.jpg",
+        "arquivo_polaroid": "Faz Jacupiranga_28042026_091423_polaroid.jpg",
+        "tipo": "GENERICA_COM_GPS",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 545.5139186295503,
+        "data_hora": "28/04/2026 09:14"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.458048600000005,
+          -12.868193400000001
+        ]
+      },
+      "properties": {
+        "arquivo_original": "Faz Jacupiranga_28042026_091428.jpg",
+        "arquivo_polaroid": "Faz Jacupiranga_28042026_091428_polaroid.jpg",
+        "tipo": "GENERICA_COM_GPS",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 545.2858895705522,
+        "data_hora": "28/04/2026 09:14"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.458049900000006,
+          -12.868206
+        ]
+      },
+      "properties": {
+        "arquivo_original": "Faz Jacupiranga_28042026_091432.jpg",
+        "arquivo_polaroid": "Faz Jacupiranga_28042026_091432_polaroid.jpg",
+        "tipo": "GENERICA_COM_GPS",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 545.2744186046511,
+        "data_hora": "28/04/2026 09:14"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.4580459,
+          -12.8682355
+        ]
+      },
+      "properties": {
+        "arquivo_original": "Faz Jacupiranga_28042026_091450.jpg",
+        "arquivo_polaroid": "Faz Jacupiranga_28042026_091450_polaroid.jpg",
+        "tipo": "GENERICA_COM_GPS",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 545.2288828337875,
+        "data_hora": "28/04/2026 09:14"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.4580396,
+          -12.868253000000001
+        ]
+      },
+      "properties": {
+        "arquivo_original": "Faz Jacupiranga_28042026_091500.jpg",
+        "arquivo_polaroid": "Faz Jacupiranga_28042026_091500_polaroid.jpg",
+        "tipo": "GENERICA_COM_GPS",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 544.5225806451613,
+        "data_hora": "28/04/2026 09:15"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.4583055,
+          -12.8683262
+        ]
+      },
+      "properties": {
+        "arquivo_original": "Faz Jacupiranga_28042026_091548.jpg",
+        "arquivo_polaroid": "Faz Jacupiranga_28042026_091548_polaroid.jpg",
+        "tipo": "GENERICA_COM_GPS",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 547.94921875,
+        "data_hora": "28/04/2026 09:15"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.4583401,
+          -12.8681915
+        ]
+      },
+      "properties": {
+        "arquivo_original": "Faz Jacupiranga_28042026_091646.jpg",
+        "arquivo_polaroid": "Faz Jacupiranga_28042026_091646_polaroid.jpg",
+        "tipo": "GENERICA_COM_GPS",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 543.2958963282938,
+        "data_hora": "28/04/2026 09:16"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.458392,
+          -12.868207400000001
+        ]
+      },
+      "properties": {
+        "arquivo_original": "Faz Jacupiranga_28042026_091710.jpg",
+        "arquivo_polaroid": "Faz Jacupiranga_28042026_091710_polaroid.jpg",
+        "tipo": "GENERICA_COM_GPS",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 542.3920863309353,
+        "data_hora": "28/04/2026 09:17"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.4582916,
+          -12.8683343
+        ]
+      },
+      "properties": {
+        "arquivo_original": "Faz Jacupiranga_28042026_091734.jpg",
+        "arquivo_polaroid": "Faz Jacupiranga_28042026_091734_polaroid.jpg",
+        "tipo": "GENERICA_COM_GPS",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 543.3083511777302,
+        "data_hora": "28/04/2026 09:17"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.4583099,
+          -12.868416100000001
+        ]
+      },
+      "properties": {
+        "arquivo_original": "Faz Jacupiranga_28042026_091744.jpg",
+        "arquivo_polaroid": "Faz Jacupiranga_28042026_091744_polaroid.jpg",
+        "tipo": "GENERICA_COM_GPS",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 542.6441647597254,
+        "data_hora": "28/04/2026 09:17"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.4579393,
+          -12.8686842
+        ]
+      },
+      "properties": {
+        "arquivo_original": "Faz Jacupiranga_28042026_091922.jpg",
+        "arquivo_polaroid": "Faz Jacupiranga_28042026_091922_polaroid.jpg",
+        "tipo": "GENERICA_COM_GPS",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 548.6108374384237,
+        "data_hora": "28/04/2026 09:19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.458442000000005,
+          -12.8696842
+        ]
+      },
+      "properties": {
+        "arquivo_original": "Faz Jacupiranga_Animais_28042026_085746.jpg",
+        "arquivo_polaroid": "Faz Jacupiranga_Animais_28042026_085746_polaroid.jpg",
+        "tipo": "GENERICA_COM_GPS",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 554.8642533936652,
+        "data_hora": "28/04/2026 08:57"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.4578925,
+          -12.868528300000001
+        ]
+      },
+      "properties": {
+        "arquivo_original": "Faz Jacupiranga_Banheiro 1_28042026_090923.jpg",
+        "arquivo_polaroid": "Faz Jacupiranga_Banheiro 1_28042026_090923_polaroid.jpg",
+        "tipo": "GENERICA_COM_GPS",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 545.31640625,
+        "data_hora": "28/04/2026 09:09"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.457963500000005,
+          -12.868493800000001
+        ]
+      },
+      "properties": {
+        "arquivo_original": "Faz Jacupiranga_Banheiro 2_28042026_092103.jpg",
+        "arquivo_polaroid": "Faz Jacupiranga_Banheiro 2_28042026_092103_polaroid.jpg",
+        "tipo": "GENERICA_COM_GPS",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 548.7124010554089,
+        "data_hora": "28/04/2026 09:21"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.457911900000006,
+          -12.869310800000001
+        ]
+      },
+      "properties": {
+        "arquivo_original": "Faz Jacupiranga_Casa_28042026_085838.jpg",
+        "arquivo_polaroid": "Faz Jacupiranga_Casa_28042026_085838_polaroid.jpg",
+        "tipo": "GENERICA_COM_GPS",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 558.0795847750865,
+        "data_hora": "28/04/2026 08:58"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.4580063,
+          -12.868564300000001
+        ]
+      },
+      "properties": {
+        "arquivo_original": "Faz Jacupiranga_Casa_28042026_090108.jpg",
+        "arquivo_polaroid": "Faz Jacupiranga_Casa_28042026_090108_polaroid.jpg",
+        "tipo": "GENERICA_COM_GPS",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 541.3201892744479,
+        "data_hora": "28/04/2026 09:01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.4579195,
+          -12.869337400000001
+        ]
+      },
+      "properties": {
+        "arquivo_original": "Faz Jacupiranga_Cocho_28042026_085813.jpg",
+        "arquivo_polaroid": "Faz Jacupiranga_Cocho_28042026_085813_polaroid.jpg",
+        "tipo": "GENERICA_COM_GPS",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 560.5874015748032,
+        "data_hora": "28/04/2026 08:58"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.4579596,
+          -12.8685504
+        ]
+      },
+      "properties": {
+        "arquivo_original": "Faz Jacupiranga_Cozinha_28042026_090225.jpg",
+        "arquivo_polaroid": "Faz Jacupiranga_Cozinha_28042026_090225_polaroid.jpg",
+        "tipo": "GENERICA_COM_GPS",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 546.3388704318937,
+        "data_hora": "28/04/2026 09:02"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.4579352,
+          -12.8685516
+        ]
+      },
+      "properties": {
+        "arquivo_original": "Faz Jacupiranga_Cozinha_28042026_090757.jpg",
+        "arquivo_polaroid": "Faz Jacupiranga_Cozinha_28042026_090757_polaroid.jpg",
+        "tipo": "GENERICA_COM_GPS",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 546.4713114754098,
+        "data_hora": "28/04/2026 09:07"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.457988400000005,
+          -12.8687094
+        ]
+      },
+      "properties": {
+        "arquivo_original": "Faz Jacupiranga_Curral_28042026_091849.jpg",
+        "arquivo_polaroid": "Faz Jacupiranga_Curral_28042026_091849_polaroid.jpg",
+        "tipo": "GENERICA_COM_GPS",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 550.5769041769041,
+        "data_hora": "28/04/2026 09:18"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.4000896,
+          -12.9373252
+        ]
+      },
+      "properties": {
+        "arquivo_original": "Faz Jacupiranga_Entrada_28042026_080158.jpg",
+        "arquivo_polaroid": "Faz Jacupiranga_Entrada_28042026_080158_polaroid.jpg",
+        "tipo": "GENERICA_COM_GPS",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 398.90575916230364,
+        "data_hora": "28/04/2026 08:01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.4000868,
+          -12.9373263
+        ]
+      },
+      "properties": {
+        "arquivo_original": "Faz Jacupiranga_Entrada_28042026_080214.jpg",
+        "arquivo_polaroid": "Faz Jacupiranga_Entrada_28042026_080214_polaroid.jpg",
+        "tipo": "GENERICA_COM_GPS",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 402.1272577996716,
+        "data_hora": "28/04/2026 08:02"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.400101899999996,
+          -12.9373235
+        ]
+      },
+      "properties": {
+        "arquivo_original": "Faz Jacupiranga_Entrada_28042026_080234.jpg",
+        "arquivo_polaroid": "Faz Jacupiranga_Entrada_28042026_080234_polaroid.jpg",
+        "tipo": "GENERICA_COM_GPS",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 402.8698752228164,
+        "data_hora": "28/04/2026 08:02"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.460154900000006,
+          -12.8706622
+        ]
+      },
+      "properties": {
+        "arquivo_original": "Faz Jacupiranga_Entrada_28042026_085533.jpg",
+        "arquivo_polaroid": "Faz Jacupiranga_Entrada_28042026_085533_polaroid.jpg",
+        "tipo": "GENERICA_COM_GPS",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 584.26318359375,
+        "data_hora": "28/04/2026 08:55"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.4601046,
+          -12.8706014
+        ]
+      },
+      "properties": {
+        "arquivo_original": "Faz Jacupiranga_Entrada_28042026_085557.jpg",
+        "arquivo_polaroid": "Faz Jacupiranga_Entrada_28042026_085557_polaroid.jpg",
+        "tipo": "GENERICA_COM_GPS",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 571.529296875,
+        "data_hora": "28/04/2026 08:55"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.4578208,
+          -12.8685515
+        ]
+      },
+      "properties": {
+        "arquivo_original": "Faz Jacupiranga_Galpão_28042026_091105.jpg",
+        "arquivo_polaroid": "Faz Jacupiranga_Galpão_28042026_091105_polaroid.jpg",
+        "tipo": "GENERICA_COM_GPS",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 546.0190476190476,
+        "data_hora": "28/04/2026 09:11"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.4588319,
+          -12.8699451
+        ]
+      },
+      "properties": {
+        "arquivo_original": "Faz Jacupiranga_Pastos_28042026_085710.jpg",
+        "arquivo_polaroid": "Faz Jacupiranga_Pastos_28042026_085710_polaroid.jpg",
+        "tipo": "GENERICA_COM_GPS",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 565.9672897196261,
+        "data_hora": "28/04/2026 08:57"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.458836500000004,
+          -12.8699505
+        ]
+      },
+      "properties": {
+        "arquivo_original": "Faz Jacupiranga_Pastos_28042026_085723.jpg",
+        "arquivo_polaroid": "Faz Jacupiranga_Pastos_28042026_085723_polaroid.jpg",
+        "tipo": "GENERICA_COM_GPS",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 566.5745856353591,
+        "data_hora": "28/04/2026 08:57"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.4534024,
+          -12.8887773
+        ]
+      },
+      "properties": {
+        "arquivo_original": "Faz Jacupiranga_Porteira na estrada de acesso_28042026_084345.jpg",
+        "arquivo_polaroid": "Faz Jacupiranga_Porteira na estrada de acesso_28042026_084345_polaroid.jpg",
+        "tipo": "GENERICA_COM_GPS",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 566.9633802816901,
+        "data_hora": "28/04/2026 08:43"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.4579375,
+          -12.8685614
+        ]
+      },
+      "properties": {
+        "arquivo_original": "Faz Jacupiranga_Quarto 01_28042026_090557.jpg",
+        "arquivo_polaroid": "Faz Jacupiranga_Quarto 01_28042026_090557_polaroid.jpg",
+        "tipo": "GENERICA_COM_GPS",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 546.8950177935943,
+        "data_hora": "28/04/2026 09:05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.4579311,
+          -12.868556700000001
+        ]
+      },
+      "properties": {
+        "arquivo_original": "Faz Jacupiranga_Quarto 2_28042026_090735.jpg",
+        "arquivo_polaroid": "Faz Jacupiranga_Quarto 2_28042026_090735_polaroid.jpg",
+        "tipo": "GENERICA_COM_GPS",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 546.5054945054945,
+        "data_hora": "28/04/2026 09:07"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.4579242,
+          -12.8685192
+        ]
+      },
+      "properties": {
+        "arquivo_original": "Faz Jacupiranga_Quarto 3_28042026_090848.jpg",
+        "arquivo_polaroid": "Faz Jacupiranga_Quarto 3_28042026_090848_polaroid.jpg",
+        "tipo": "GENERICA_COM_GPS",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 546.3732876712329,
+        "data_hora": "28/04/2026 09:08"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.4578938,
+          -12.8685259
+        ]
+      },
+      "properties": {
+        "arquivo_original": "Faz Jacupiranga_Quarto 3_28042026_090943.jpg",
+        "arquivo_polaroid": "Faz Jacupiranga_Quarto 3_28042026_090943_polaroid.jpg",
+        "tipo": "GENERICA_COM_GPS",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 545.57421875,
+        "data_hora": "28/04/2026 09:09"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.4579134,
+          -12.8685636
+        ]
+      },
+      "properties": {
+        "arquivo_original": "Faz Jacupiranga_Sala_28042026_090338.jpg",
+        "arquivo_polaroid": "Faz Jacupiranga_Sala_28042026_090338_polaroid.jpg",
+        "tipo": "GENERICA_COM_GPS",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 542.666015625,
+        "data_hora": "28/04/2026 09:03"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.457939,
+          -12.8685535
+        ]
+      },
+      "properties": {
+        "arquivo_original": "Faz Jacupiranga_Sala_28042026_090650.jpg",
+        "arquivo_polaroid": "Faz Jacupiranga_Sala_28042026_090650_polaroid.jpg",
+        "tipo": "GENERICA_COM_GPS",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 546.6127946127946,
+        "data_hora": "28/04/2026 09:06"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.457935400000004,
+          -12.868547300000001
+        ]
+      },
+      "properties": {
+        "arquivo_original": "Faz Jacupiranga_Varanda_28042026_090814.jpg",
+        "arquivo_polaroid": "Faz Jacupiranga_Varanda_28042026_090814_polaroid.jpg",
+        "tipo": "GENERICA_COM_GPS",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 546.441647597254,
+        "data_hora": "28/04/2026 09:08"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.4579607,
+          -12.8685659
+        ]
+      },
+      "properties": {
+        "arquivo_original": "Faz Jacupiranga_Área_28042026_090147.jpg",
+        "arquivo_polaroid": "Faz Jacupiranga_Área_28042026_090147_polaroid.jpg",
+        "tipo": "GENERICA_COM_GPS",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 545.948,
+        "data_hora": "28/04/2026 09:01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.45717213888889,
+          -12.870340638888889
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0001.JPG",
+        "arquivo_polaroid": "DJI_0001_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 611.9,
+        "data_hora": "28/04/2026 09:23"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.45717336111112,
+          -12.870340694444446
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0002.JPG",
+        "arquivo_polaroid": "DJI_0002_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 581.4,
+        "data_hora": "28/04/2026 09:23"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.457224611111116,
+          -12.870242722222223
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0003.JPG",
+        "arquivo_polaroid": "DJI_0003_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 581.2,
+        "data_hora": "28/04/2026 09:23"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.458029333333336,
+          -12.866697083333333
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0004.JPG",
+        "arquivo_polaroid": "DJI_0004_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 581.1,
+        "data_hora": "28/04/2026 09:24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.45711694444445,
+          -12.866161916666666
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0005.JPG",
+        "arquivo_polaroid": "DJI_0005_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 581.1,
+        "data_hora": "28/04/2026 09:24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.45794977777778,
+          -12.86589986111111
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0006.JPG",
+        "arquivo_polaroid": "DJI_0006_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 581.3,
+        "data_hora": "28/04/2026 09:24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.45795530555556,
+          -12.865901777777777
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0007.JPG",
+        "arquivo_polaroid": "DJI_0007_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 589.9,
+        "data_hora": "28/04/2026 09:24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.45802508333334,
+          -12.865959416666666
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0008.JPG",
+        "arquivo_polaroid": "DJI_0008_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 612.3,
+        "data_hora": "28/04/2026 09:25"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.458028194444445,
+          -12.865960944444444
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0009.JPG",
+        "arquivo_polaroid": "DJI_0009_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 612.3,
+        "data_hora": "28/04/2026 09:25"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.458118722222224,
+          -12.868154861111112
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0010.JPG",
+        "arquivo_polaroid": "DJI_0010_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 612.2,
+        "data_hora": "28/04/2026 09:26"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.45814852777778,
+          -12.868323722222224
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0011.JPG",
+        "arquivo_polaroid": "DJI_0011_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 614.7,
+        "data_hora": "28/04/2026 09:26"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.45814141666667,
+          -12.868348166666667
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0012.JPG",
+        "arquivo_polaroid": "DJI_0012_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 614.7,
+        "data_hora": "28/04/2026 09:26"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.457769444444445,
+          -12.868880138888889
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0013.JPG",
+        "arquivo_polaroid": "DJI_0013_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 614.6,
+        "data_hora": "28/04/2026 09:27"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.45803519444445,
+          -12.868672
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0014.JPG",
+        "arquivo_polaroid": "DJI_0014_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 543.9,
+        "data_hora": "28/04/2026 09:27"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.458094333333335,
+          -12.868795666666667
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0015.JPG",
+        "arquivo_polaroid": "DJI_0015_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 544.0,
+        "data_hora": "28/04/2026 09:28"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.45789402777778,
+          -12.868842666666668
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0016.JPG",
+        "arquivo_polaroid": "DJI_0016_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 543.9,
+        "data_hora": "28/04/2026 09:28"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.457695722222226,
+          -12.868781555555556
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0017.JPG",
+        "arquivo_polaroid": "DJI_0017_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 543.9,
+        "data_hora": "28/04/2026 09:28"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.45753788888889,
+          -12.868543527777778
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0018.JPG",
+        "arquivo_polaroid": "DJI_0018_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 543.9,
+        "data_hora": "28/04/2026 09:28"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.457536555555556,
+          -12.868360277777779
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0019.JPG",
+        "arquivo_polaroid": "DJI_0019_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 543.9,
+        "data_hora": "28/04/2026 09:28"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.457748055555555,
+          -12.868053472222222
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0020.JPG",
+        "arquivo_polaroid": "DJI_0020_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 544.0,
+        "data_hora": "28/04/2026 09:29"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.45774775,
+          -12.868054194444445
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0021.JPG",
+        "arquivo_polaroid": "DJI_0021_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 544.0,
+        "data_hora": "28/04/2026 09:29"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.45778855555556,
+          -12.868220305555557
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0022.JPG",
+        "arquivo_polaroid": "DJI_0022_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 544.0,
+        "data_hora": "28/04/2026 09:29"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.457925888888894,
+          -12.868155277777777
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0023.JPG",
+        "arquivo_polaroid": "DJI_0023_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 544.2,
+        "data_hora": "28/04/2026 09:29"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.45796008333333,
+          -12.868307388888889
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0024.JPG",
+        "arquivo_polaroid": "DJI_0024_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 544.0,
+        "data_hora": "28/04/2026 09:29"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.45799052777778,
+          -12.868572527777777
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0025.JPG",
+        "arquivo_polaroid": "DJI_0025_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 527.7,
+        "data_hora": "28/04/2026 09:30"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.45798991666667,
+          -12.868572527777777
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0026.JPG",
+        "arquivo_polaroid": "DJI_0026_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 527.7,
+        "data_hora": "28/04/2026 09:30"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.457989000000005,
+          -12.868572305555556
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0027.JPG",
+        "arquivo_polaroid": "DJI_0027_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 527.7,
+        "data_hora": "28/04/2026 09:30"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.45798822222223,
+          -12.868571555555556
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0028.JPG",
+        "arquivo_polaroid": "DJI_0028_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 527.7,
+        "data_hora": "28/04/2026 09:30"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.457995027777784,
+          -12.86856188888889
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0029.JPG",
+        "arquivo_polaroid": "DJI_0029_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 527.1,
+        "data_hora": "28/04/2026 09:30"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.45796063888889,
+          -12.868511611111112
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0030.JPG",
+        "arquivo_polaroid": "DJI_0030_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 526.5,
+        "data_hora": "28/04/2026 09:32"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.457989194444444,
+          -12.868537027777778
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0031.JPG",
+        "arquivo_polaroid": "DJI_0031_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 526.3,
+        "data_hora": "28/04/2026 09:32"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.457993638888894,
+          -12.868459416666667
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0032.JPG",
+        "arquivo_polaroid": "DJI_0032_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 525.5,
+        "data_hora": "28/04/2026 09:33"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.45799016666667,
+          -12.86845375
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0033.JPG",
+        "arquivo_polaroid": "DJI_0033_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 525.1,
+        "data_hora": "28/04/2026 09:33"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.45799111111111,
+          -12.868450888888889
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0034.JPG",
+        "arquivo_polaroid": "DJI_0034_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 525.5,
+        "data_hora": "28/04/2026 09:33"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.45799161111111,
+          -12.868450472222223
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0035.JPG",
+        "arquivo_polaroid": "DJI_0035_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 525.7,
+        "data_hora": "28/04/2026 09:33"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.457993138888895,
+          -12.86845011111111
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0036.JPG",
+        "arquivo_polaroid": "DJI_0036_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 525.7,
+        "data_hora": "28/04/2026 09:33"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.45813541666667,
+          -12.868676583333334
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0963.JPG",
+        "arquivo_polaroid": "DJI_0963_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 563.1,
+        "data_hora": "28/04/2026 09:12"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.458134694444446,
+          -12.868678138888889
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0964.JPG",
+        "arquivo_polaroid": "DJI_0964_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 563.3,
+        "data_hora": "28/04/2026 09:12"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.45813363888889,
+          -12.868678527777778
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0965.JPG",
+        "arquivo_polaroid": "DJI_0965_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 563.3,
+        "data_hora": "28/04/2026 09:12"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.45813105555556,
+          -12.868680027777778
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0966.JPG",
+        "arquivo_polaroid": "DJI_0966_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 563.3,
+        "data_hora": "28/04/2026 09:12"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.45812977777778,
+          -12.868682666666666
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0967.JPG",
+        "arquivo_polaroid": "DJI_0967_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 563.3,
+        "data_hora": "28/04/2026 09:13"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.458153083333336,
+          -12.868914083333333
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0968.JPG",
+        "arquivo_polaroid": "DJI_0968_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 563.4,
+        "data_hora": "28/04/2026 09:13"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.45769222222223,
+          -12.868838583333334
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0969.JPG",
+        "arquivo_polaroid": "DJI_0969_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 563.3,
+        "data_hora": "28/04/2026 09:13"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.45752408333334,
+          -12.868581527777778
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0970.JPG",
+        "arquivo_polaroid": "DJI_0970_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 563.3,
+        "data_hora": "28/04/2026 09:13"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.45752302777778,
+          -12.868578277777779
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0971.JPG",
+        "arquivo_polaroid": "DJI_0971_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 563.3,
+        "data_hora": "28/04/2026 09:13"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.457533500000004,
+          -12.868933222222223
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0972.JPG",
+        "arquivo_polaroid": "DJI_0972_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 562.5,
+        "data_hora": "28/04/2026 09:14"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.457530222222225,
+          -12.868936027777778
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0973.JPG",
+        "arquivo_polaroid": "DJI_0973_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 562.4,
+        "data_hora": "28/04/2026 09:14"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.45608522222223,
+          -12.867888277777778
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0974.JPG",
+        "arquivo_polaroid": "DJI_0974_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 562.2,
+        "data_hora": "28/04/2026 09:14"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.45608194444445,
+          -12.867887111111111
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0975.JPG",
+        "arquivo_polaroid": "DJI_0975_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 562.4,
+        "data_hora": "28/04/2026 09:14"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.45608152777778,
+          -12.867887166666668
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0976.JPG",
+        "arquivo_polaroid": "DJI_0976_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 562.4,
+        "data_hora": "28/04/2026 09:14"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.455721611111116,
+          -12.866823638888889
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0977.JPG",
+        "arquivo_polaroid": "DJI_0977_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 562.6,
+        "data_hora": "28/04/2026 09:15"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.45543902777778,
+          -12.865665916666666
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0978.JPG",
+        "arquivo_polaroid": "DJI_0978_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 562.4,
+        "data_hora": "28/04/2026 09:15"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.45543827777778,
+          -12.865667694444443
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0979.JPG",
+        "arquivo_polaroid": "DJI_0979_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 562.4,
+        "data_hora": "28/04/2026 09:15"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.45501875,
+          -12.866350027777777
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0980.JPG",
+        "arquivo_polaroid": "DJI_0980_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 584.3,
+        "data_hora": "28/04/2026 09:15"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.45463208333334,
+          -12.867473277777778
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0981.JPG",
+        "arquivo_polaroid": "DJI_0981_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 586.1,
+        "data_hora": "28/04/2026 09:15"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.453293611111114,
+          -12.86811638888889
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0982.JPG",
+        "arquivo_polaroid": "DJI_0982_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 634.7,
+        "data_hora": "28/04/2026 09:16"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.45329597222222,
+          -12.86811588888889
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0983.JPG",
+        "arquivo_polaroid": "DJI_0983_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 634.8,
+        "data_hora": "28/04/2026 09:16"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.453297500000005,
+          -12.868115305555555
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0984.JPG",
+        "arquivo_polaroid": "DJI_0984_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 634.7,
+        "data_hora": "28/04/2026 09:16"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.45310769444445,
+          -12.868112833333333
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0985.JPG",
+        "arquivo_polaroid": "DJI_0985_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 683.0,
+        "data_hora": "28/04/2026 09:17"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.45191241666667,
+          -12.868859111111112
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0986.JPG",
+        "arquivo_polaroid": "DJI_0986_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 683.1,
+        "data_hora": "28/04/2026 09:17"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.45467230555556,
+          -12.871827555555557
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0987.JPG",
+        "arquivo_polaroid": "DJI_0987_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 692.1,
+        "data_hora": "28/04/2026 09:18"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.45466733333333,
+          -12.872813694444446
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0988.JPG",
+        "arquivo_polaroid": "DJI_0988_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 648.6,
+        "data_hora": "28/04/2026 09:19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.454669305555555,
+          -12.872813027777779
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0989.JPG",
+        "arquivo_polaroid": "DJI_0989_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 648.8,
+        "data_hora": "28/04/2026 09:19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.454968722222226,
+          -12.87492675
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0990.JPG",
+        "arquivo_polaroid": "DJI_0990_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 648.8,
+        "data_hora": "28/04/2026 09:19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.454968388888894,
+          -12.874926638888889
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0991.JPG",
+        "arquivo_polaroid": "DJI_0991_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 648.7,
+        "data_hora": "28/04/2026 09:19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.455004361111115,
+          -12.874560138888889
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0992.JPG",
+        "arquivo_polaroid": "DJI_0992_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 646.6,
+        "data_hora": "28/04/2026 09:20"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.45494488888889,
+          -12.873998583333334
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0993.JPG",
+        "arquivo_polaroid": "DJI_0993_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 638.0,
+        "data_hora": "28/04/2026 09:20"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.45494611111111,
+          -12.873999805555556
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0994.JPG",
+        "arquivo_polaroid": "DJI_0994_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 637.9,
+        "data_hora": "28/04/2026 09:20"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.45494430555556,
+          -12.874000055555555
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0995.JPG",
+        "arquivo_polaroid": "DJI_0995_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 637.8,
+        "data_hora": "28/04/2026 09:20"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.45591344444445,
+          -12.872689833333334
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0996.JPG",
+        "arquivo_polaroid": "DJI_0996_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 637.9,
+        "data_hora": "28/04/2026 09:21"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.457133500000005,
+          -12.871519194444446
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0997.JPG",
+        "arquivo_polaroid": "DJI_0997_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 615.6,
+        "data_hora": "28/04/2026 09:21"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.45714847222222,
+          -12.871530527777779
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0998.JPG",
+        "arquivo_polaroid": "DJI_0998_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 614.9,
+        "data_hora": "28/04/2026 09:22"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.457393583333335,
+          -12.870436222222223
+        ]
+      },
+      "properties": {
+        "arquivo_original": "DJI_0999.JPG",
+        "arquivo_polaroid": "DJI_0999_polaroid.jpg",
+        "tipo": "DJI",
+        "propriedade": "08 - Relatorio Fazenda Jacupiranga",
+        "altitude": 612.0,
+        "data_hora": "28/04/2026 09:22"
+      }
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoPolaroid WebGIS - 08 - Relatorio Fazenda Jacupiranga</title>
+    <script>
+        const senhaCorrecta = "geotech123";
+        const userAttempt = prompt("Digite a senha para acessar o WebGIS:");
+        if (userAttempt !== senhaCorrecta) {
+            document.write("<h2 style='color: white; background: #1a1a1a; height: 100vh; margin:0; display:flex; align-items:center; justify-content:center; font-family:sans-serif;'>Acesso negado</h2>");
+            window.stop();
+            throw new Error("Acesso negado");
+        }
+    </script>
+    <script src="https://unpkg.com/maplibre-gl@3.6.2/dist/maplibre-gl.js"></script>
+    <link href="https://unpkg.com/maplibre-gl@3.6.2/dist/maplibre-gl.css" rel="stylesheet" />
+    <style>
+        body { margin: 0; padding: 0; overflow: hidden; font-family: sans-serif; }
+        #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+        #alert-banner {
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(255, 76, 76, 0.9);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            z-index: 1000;
+            display: none;
+            backdrop-filter: blur(4px);
+        }
+        .maplibregl-popup-content {
+            padding: 10px;
+            background: #fff;
+            border-radius: 4px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+        .status-tag {
+            display: inline-block;
+            margin-top: 5px;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 10px;
+            text-transform: uppercase;
+        }
+        .status-dentro { background: #d1f7d1; color: #006400; }
+        .status-fora { background: #ffdada; color: #8b0000; }
+    </style>
+</head>
+<body>
+    <div id="alert-banner">⚠ Existem fotos fora do limite da propriedade</div>
+    <div id="map"></div>
+
+    <script>
+        const map = new maplibregl.Map({
+            container: 'map',
+            style: 'https://demotiles.maplibre.org/style.json',
+            center: [0, 0],
+            zoom: 2
+        });
+
+        map.on('load', async () => {
+            try {
+                const [fotosRes, poligonoRes] = await Promise.all([
+                    fetch('./fotos_classificadas.geojson'),
+                    fetch('./poligono.geojson').catch(() => null)
+                ]);
+
+                const dataFotos = await fotosRes.json();
+                let dataPoligono = null;
+                if (poligonoRes && poligonoRes.ok) {
+                    dataPoligono = await poligonoRes.json();
+                }
+
+                // Verifica se existem pontos fora para mostrar o banner
+                const hasFora = dataFotos.features.some(f => f.properties.status === 'fora');
+                if (hasFora) document.getElementById('alert-banner').style.display = 'block';
+
+                if (dataPoligono) {
+                    map.addSource('poligono', { type: 'geojson', data: dataPoligono });
+                    map.addLayer({
+                        id: 'poligono-fill',
+                        type: 'fill',
+                        source: 'poligono',
+                        paint: { 'fill-color': '#00ff00', 'fill-opacity': 0.15 }
+                    });
+                    map.addLayer({
+                        id: 'poligono-outline',
+                        type: 'line',
+                        source: 'poligono',
+                        paint: { 'line-color': '#006400', 'line-width': 2 }
+                    });
+                }
+
+                map.addSource('fotos', { type: 'geojson', data: dataFotos });
+
+                // Pontos DENTRO (Verde)
+                map.addLayer({
+                    id: 'pontos-dentro',
+                    type: 'circle',
+                    source: 'fotos',
+                    filter: ['==', ['get', 'status'], 'dentro'],
+                    paint: {
+                        'circle-radius': 6,
+                        'circle-color': '#00ff00',
+                        'circle-stroke-width': 2,
+                        'circle-stroke-color': '#ffffff'
+                    }
+                });
+
+                // Pontos FORA (Vermelho) - Sempre por cima
+                map.addLayer({
+                    id: 'pontos-fora',
+                    type: 'circle',
+                    source: 'fotos',
+                    filter: ['==', ['get', 'status'], 'fora'],
+                    paint: {
+                        'circle-radius': 7,
+                        'circle-color': '#ff0000',
+                        'circle-stroke-width': 2,
+                        'circle-stroke-color': '#ffffff'
+                    }
+                });
+
+                // FitBounds: Usa polígono ou apenas pontos "dentro"
+                const bounds = new maplibregl.LngLatBounds();
+                if (dataPoligono) {
+                    const feature = dataPoligono.features[0];
+                    const coords = feature.geometry.type === 'Polygon' ? 
+                                   feature.geometry.coordinates[0] : 
+                                   feature.geometry.coordinates[0][0];
+                    coords.forEach(coord => bounds.extend(coord));
+                } else {
+                    dataFotos.features.filter(f => f.properties.status === 'dentro').forEach(f => {
+                        bounds.extend(f.geometry.coordinates);
+                    });
+                }
+                
+                if (!bounds.isEmpty()) map.fitBounds(bounds, { padding: 50 });
+
+                const handlePopup = (e) => {
+                    const props = e.features[0].properties;
+                    const coords = e.features[0].geometry.coordinates.slice();
+                    const statusText = props.status === 'dentro' ? 'DENTRO DA FAZENDA' : 'FORA DA ÁREA';
+                    const statusClass = props.status === 'dentro' ? 'status-dentro' : 'status-fora';
+
+                    const html = `
+                        <div class="webgis-popup">
+                            <img src="./polaroides/${props.arquivo_polaroid}" width="250" 
+                                 onerror="this.outerHTML='<p>Imagem não encontrada</p>'">
+                            <p><strong>${props.propriedade}</strong></p>
+                            <span class="status-tag ${statusClass}">${statusText}</span>
+                        </div>
+                    `;
+                    new maplibregl.Popup().setLngLat(coords).setHTML(html).addTo(map);
+                };
+
+                map.on('click', 'pontos-dentro', handlePopup);
+                map.on('click', 'pontos-fora', handlePopup);
+
+                map.on('mouseenter', 'pontos-dentro', () => map.getCanvas().style.cursor = 'pointer');
+                map.on('mouseleave', 'pontos-dentro', () => map.getCanvas().style.cursor = '');
+                map.on('mouseenter', 'pontos-fora', () => map.getCanvas().style.cursor = 'pointer');
+                map.on('mouseleave', 'pontos-fora', () => map.getCanvas().style.cursor = '');
+
+            } catch (err) {
+                console.error('Erro:', err);
+            }
+        });
+    </script>
+</body>
+</html>

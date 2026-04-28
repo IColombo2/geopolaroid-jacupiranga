@@ -1,0 +1,26 @@
+RELATÓRIO TÉCNICO DE AUDITORIA ESPACIAL
+PROJETO GEOPOLAROID
+
+1. RESUMO GERAL
+Propriedade: Fazenda Jacupiranga
+Total de Fotos Processadas: 120
+Fotos Dentro do Limite: 111
+Fotos Fora do Limite: 9
+
+2. ANÁLISE ESPACIAL
+Aderência Geográfica: 92.50%
+Dispersão Externa: 7.50%
+
+3. LISTA DE OCORRÊNCIAS (PONTOS EXTERNOS)
+- Faz Jacupiranga_28042026_085029.jpg | Status: FORA | Ponto externo potencialmente inconsistente
+- Faz Jacupiranga_28042026_085039.jpg | Status: FORA | Ponto externo potencialmente inconsistente
+- Faz Jacupiranga_28042026_085213.jpg | Status: FORA | Ponto externo potencialmente inconsistente
+- Faz Jacupiranga_Entrada_28042026_080158.jpg | Status: FORA | Pontos externos de acesso
+- Faz Jacupiranga_Entrada_28042026_080214.jpg | Status: FORA | Pontos externos de acesso
+- Faz Jacupiranga_Entrada_28042026_080234.jpg | Status: FORA | Pontos externos de acesso
+- Faz Jacupiranga_Entrada_28042026_085533.jpg | Status: FORA | Pontos externos de acesso
+- Faz Jacupiranga_Entrada_28042026_085557.jpg | Status: FORA | Pontos externos de acesso
+- Faz Jacupiranga_Porteira na estrada de acesso_28042026_084345.jpg | Status: FORA | Pontos externos de acesso
+
+4. CONCLUSÃO AUTOMÁTICA
+O levantamento apresenta coerência espacial com os limites da propriedade. Foram detectados pontos fora da área sem padrão definido de acesso.
