@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Testes — Painel TSE 2026</title>
+  <link rel="stylesheet" href="./styles.css">
+  <style>
+    body{padding:20px}.test-shell{max-width:820px;margin:auto}.test{padding:10px 12px;margin:8px 0;border:1px solid var(--border);border-radius:10px;background:var(--surface)}
+    .pass{border-left:5px solid #18864b}.fail{border-left:5px solid #c23b3b}.warn{border-left:5px solid #b07a00}
+    pre{white-space:pre-wrap;word-break:break-word;font-size:11px}
+    #shareCard{position:absolute;left:-9999px;top:0;width:380px}
+  </style>
+</head>
+<body>
+  <main class="test-shell">
+    <h1>Autotestes — Painel TSE 2026</h1>
+    <p>Executar via servidor HTTP local. Os testes de integração acessam os mesmos arquivos públicos do TSE e a malha TopoJSON.</p>
+    <button id="run" class="text-btn">Executar testes</button>
+    <div id="results"></div>
+    <div id="shareCard" class="share-card"></div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+  <script src="./tests.js"></script>
+</body>
+</html>
