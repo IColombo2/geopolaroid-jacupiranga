@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f6f7f9">
+  <title>Apuração Presidente 2026 — TSE</title>
+  <meta name="description" content="Painel independente de visualização dos dados oficiais de apuração do TSE para Presidente em 2026. Sem projeções.">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="preconnect" href="https://raw.githubusercontent.com">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">DADOS OFICIAIS · SEM PROJEÇÃO</p>
+      <h1>Presidente 2026</h1>
+    </div>
+    <button id="themeToggle" class="icon-btn" type="button" aria-label="Alternar tema">◐</button>
+  </header>
+
+  <main class="container">
+    <section class="status-strip" aria-live="polite">
+      <div><span class="status-dot" id="statusDot"></span><strong id="statusText">Carregando dados do TSE…</strong></div>
+      <div class="status-meta">
+        <span id="tseGenerated">TSE: —</span>
+        <span id="updatedAgo">atualizado há —</span>
+      </div>
+    </section>
+
+    <div id="warningBox" class="warning hidden" role="status"></div>
+
+    <section class="panel hero-panel">
+      <div class="panel-heading">
+        <div>
+          <p class="eyebrow">PLACAR NACIONAL</p>
+          <h2>Votos válidos</h2>
+        </div>
+        <div class="apuracao-badge"><span id="nationalPst">—</span> das seções</div>
+      </div>
+
+      <div class="score-grid">
+        <article class="candidate-card lula-card">
+          <div class="candidate-head"><span class="candidate-dot lula"></span><span>13 · PT</span></div>
+          <h3 id="lulaName">Lula</h3>
+          <div class="candidate-pct" id="lulaPct">—</div>
+          <div class="candidate-votes" id="lulaVotes">— votos</div>
+          <div class="majority-note" id="lulaMajority">—</div>
+        </article>
+
+        <article class="candidate-card flavio-card">
+          <div class="candidate-head"><span class="candidate-dot flavio"></span><span>22 · PL</span></div>
+          <h3 id="flavioName">Flávio Bolsonaro</h3>
+          <div class="candidate-pct" id="flavioPct">—</div>
+          <div class="candidate-votes" id="flavioVotes">— votos</div>
+          <div class="majority-note" id="flavioMajority">—</div>
+        </article>
+      </div>
+
+      <div class="split-bar" aria-label="Participação nos votos válidos">
+        <div id="barLula" class="split lula-segment"></div>
+        <div id="barOthers" class="split others-segment"></div>
+        <div id="barFlavio" class="split flavio-segment"></div>
+        <span class="fifty-line" aria-hidden="true"></span>
+      </div>
+      <div class="bar-legend">
+        <span><i class="legend-dot lula"></i>Lula</span>
+        <span><i class="legend-dot others"></i>Outros</span>
+        <span><i class="legend-dot flavio"></i>Flávio</span>
+        <span class="fifty-label">50%</span>
+      </div>
+
+      <div id="leadSummary" class="lead-summary">Diferença: —</div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-heading map-heading">
+        <div>
+          <p class="eyebrow">MAPA POR UF</p>
+          <h2>Brasil</h2>
+        </div>
+        <div class="map-controls" role="group" aria-label="Camada do mapa">
+          <button class="segmented active" data-layer="leader" type="button">Liderança</button>
+          <button class="segmented" data-layer="counted" type="button">Urnas</button>
+          <button class="segmented" data-layer="margin" type="button">Margem</button>
+        </div>
+      </div>
+      <div id="mapWrap" class="map-wrap">
+        <svg id="brazilMap" viewBox="0 0 560 540" role="img" aria-label="Mapa do Brasil por unidade da Federação"></svg>
+      </div>
+      <div id="mapLegend" class="map-legend"></div>
+      <article id="stateDetail" class="state-detail">
+        <strong>Toque em uma UF</strong>
+        <span>para ver votos, percentuais, seções totalizadas e horário do arquivo.</span>
+      </article>
+    </section>
+
+    <section class="panel">
+      <div class="panel-heading">
+        <div>
+          <p class="eyebrow">EVOLUÇÃO NACIONAL</p>
+          <h2>% dos válidos × % das seções</h2>
+        </div>
+        <button id="clearHistory" class="text-btn" type="button">Limpar histórico local</button>
+      </div>
+      <div class="chart-wrap">
+        <svg id="historyChart" viewBox="0 0 760 340" role="img" aria-label="Gráfico de evolução nacional"></svg>
+      </div>
+      <p class="fine-print">O histórico é guardado somente neste navegador via localStorage, um ponto por atualização distinta do TSE.</p>
+    </section>
+
+    <section class="panel">
+      <div class="panel-heading">
+        <div>
+          <p class="eyebrow">ESTADOS</p>
+          <h2>Lula × Flávio por margem</h2>
+        </div>
+      </div>
+      <div id="stateBars" class="state-bars"></div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-heading">
+        <div>
+          <p class="eyebrow">REGIÕES</p>
+          <h2>Seções totalizadas</h2>
+        </div>
+      </div>
+      <div id="regionsGrid" class="regions-grid"></div>
+    </section>
+
+    <section class="panel exterior-panel">
+      <div class="panel-heading">
+        <div>
+          <p class="eyebrow">EXTERIOR</p>
+          <h2>Votação fora do Brasil</h2>
+        </div>
+        <div class="apuracao-badge" id="exteriorPst">—</div>
+      </div>
+      <div class="exterior-scores">
+        <div><span>Lula</span><strong id="exteriorLula">—</strong></div>
+        <div><span>Flávio</span><strong id="exteriorFlavio">—</strong></div>
+      </div>
+      <div class="fine-print" id="exteriorTime">TSE: —</div>
+    </section>
+
+    <section class="panel share-section">
+      <div class="panel-heading">
+        <div>
+          <p class="eyebrow">CARD PARA PRINT</p>
+          <h2>Resumo 1:1 · 380 px</h2>
+        </div>
+      </div>
+      <div id="shareCard" class="share-card">
+        <div class="share-top">
+          <div>
+            <span class="share-kicker">APURAÇÃO OFICIAL</span>
+            <h3>Presidente 2026</h3>
+          </div>
+          <strong id="sharePst">—</strong>
+        </div>
+        <div class="share-scores">
+          <div class="share-candidate share-lula">
+            <span>Lula · 13</span>
+            <strong id="shareLula">—</strong>
+          </div>
+          <div class="share-candidate share-flavio">
+            <span>Flávio · 22</span>
+            <strong id="shareFlavio">—</strong>
+          </div>
+        </div>
+        <svg id="shareMap" viewBox="0 0 560 540" aria-label="Minimapa da liderança por UF"></svg>
+        <div class="share-footer">
+          <span id="shareTime">TSE: —</span>
+          <strong>Fonte: TSE</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel captions-panel">
+      <div class="panel-heading">
+        <div>
+          <p class="eyebrow">LEGENDAS</p>
+          <h2>Texto pronto para copiar</h2>
+        </div>
+      </div>
+      <div class="caption-grid">
+        <article>
+          <div class="caption-head"><strong>Instagram</strong><button class="copy-btn" data-copy="instagramCaption" type="button">Copiar</button></div>
+          <textarea id="instagramCaption" readonly></textarea>
+        </article>
+        <article>
+          <div class="caption-head"><strong>WhatsApp</strong><button class="copy-btn" data-copy="whatsappCaption" type="button">Copiar</button></div>
+          <textarea id="whatsappCaption" readonly></textarea>
+        </article>
+      </div>
+    </section>
+
+    <footer>
+      <p>Visualização independente baseada exclusivamente nos arquivos públicos de resultados do Tribunal Superior Eleitoral. Não há projeções, estimativas ou alteração dos percentuais oficiais.</p>
+      <p><a href="https://resultados.tse.jus.br/" target="_blank" rel="noopener noreferrer">Resultados TSE</a></p>
+    </footer>
+  </main>
+
+  <div id="tooltip" class="tooltip hidden"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
