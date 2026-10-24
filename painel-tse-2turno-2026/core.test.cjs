@@ -1,0 +1,12 @@
+const assert=require("node:assert/strict"),C=require("./core.js");let n=0;const t=(x,f)=>{f();n++;console.log("ok -",x)};
+const raw=(o={})=>({dg:"25/10/2026",hg:"19:05:10",s:{ts:"472.075",st:o.st??"1.000",pst:o.pst??"0,21"},v:{vv:o.vv??"1.000"},carg:[{agr:[{par:[{cand:[{n:"13",nmu:"LULA",vap:o.l??"600",pvap:o.lp??"60,00"},{n:"22",nmu:"FLÁVIO BOLSONARO",vap:o.f??"400",pvap:o.fp??"40,00"}]}]}]}]});
+const S=(margin,lead,sections,valid=1e6)=>({margin,lead,sections,valid});
+t("parsers",()=>{assert.equal(C.parseCount("12.345.678"),12345678);assert.equal(C.parsePct("55,12"),55.12);assert.equal(C.parsePct(55.12),55.12);assert.ok(Number.isNaN(C.parseCount("")))});
+t("normalize",()=>{const r=C.normalize(raw(),"br");assert.ok(r.ok);assert.equal(r.data.sectionsTotal,472075);assert.equal(C.normalize({},"br").ok,false)});
+t("pre",()=>{assert.ok(C.normalize(raw({st:"0",pst:"0,00",vv:"0",l:"0",f:"0",lp:"0,00",fp:"0,00"}),"br").ok)});
+t("judge",()=>{const p=C.normalize(raw({st:"5000"}),"br").data,b=C.normalize(raw({st:"4000",vv:"900",l:"500",f:"400"}),"br").data,a=C.judge(p,b,null);assert.equal(a.accept,false);assert.equal(C.judge(p,b,a.pending).accept,true)});
+t("time",()=>assert.equal(new Date(C.parseTseTime("25/10/2026","19:05:10")).toISOString(),"2026-10-25T22:05:10.000Z"));
+t("thresholds",()=>assert.ok(C.thresholds(90).strong<C.thresholds(0).strong));
+t("classify",()=>{assert.equal(C.classify(S(5,5e4,30),S(5.1,5e4,31)).level,"light");assert.equal(C.classify(S(.5,5e3,60),S(-.2,-2e3,61)).level,"flip")});
+t("reconcile",()=>{const m=(l,f)=>({lula:{votes:l},flavio:{votes:f}});assert.equal(C.reconcile(m(600,400),[m(300,200),m(300,200)]).ok,true)});
+console.log("\n"+n+" grupos OK");
