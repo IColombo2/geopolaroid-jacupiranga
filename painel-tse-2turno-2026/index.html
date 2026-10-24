@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#07101c">
   <title>Brasil Decide 2026 — 2º Turno</title>
-  <meta name="description" content="Painel independente de apuração do 2º turno presidencial de 2026 com dados oficiais do TSE, mapa por UF, evolução, regiões e Modo Arena.">\n\n<style>:root{color-scheme:dark;--bg:#07101c;--surface:#0d1725;--surface2:#111e2f;--text:#f4f7fb;--muted:#93a4b7;--border:#22344a;--red:#e63946;--red2:#8c2029;--blue:#2b8cff;--blue2:#145ca8;--green:#2ed47a;--yellow:#f5c451;--shadow:0 14px 40px rgba(0,0,0,.28);--mapempty:#263548}
+  <meta name="description" content="Painel independente de apuração do 2º turno presidencial de 2026 com dados oficiais do TSE, mapa por UF, evolução, regiões e Modo Arena.">
+
+<style>:root{color-scheme:dark;--bg:#07101c;--surface:#0d1725;--surface2:#111e2f;--text:#f4f7fb;--muted:#93a4b7;--border:#22344a;--red:#e63946;--red2:#8c2029;--blue:#2b8cff;--blue2:#145ca8;--green:#2ed47a;--yellow:#f5c451;--shadow:0 14px 40px rgba(0,0,0,.28);--mapempty:#263548}
 html[data-theme="light"]{color-scheme:light;--bg:#f4f6f9;--surface:#fff;--surface2:#f7f9fc;--text:#17202a;--muted:#667085;--border:#dfe5ec;--shadow:0 10px 30px rgba(16,24,40,.08);--mapempty:#e6eaf0}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;font-variant-numeric:tabular-nums}button,textarea{font:inherit}.hidden{display:none!important}.topbar{position:sticky;top:0;z-index:30;display:flex;align-items:center;justify-content:space-between;padding:11px max(14px,calc((100vw - 1100px)/2));background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(14px);border-bottom:1px solid var(--border)}.topbar h1{margin:0;font-size:24px;letter-spacing:-.03em}.eyebrow{margin:0 0 3px;color:var(--muted);font-size:10px;font-weight:900;letter-spacing:.12em}.icon-btn,.mode-btn,.segmented,.text-btn,.copy-btn{border:1px solid var(--border);background:var(--surface);color:var(--text);cursor:pointer}.icon-btn{width:40px;height:40px;border-radius:12px}.mode-nav{position:sticky;top:63px;z-index:25;display:flex;gap:6px;justify-content:center;padding:8px;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}.mode-btn{padding:8px 14px;border-radius:999px;font-size:12px;font-weight:800}.mode-btn.active{background:linear-gradient(135deg,#d62f3a,#93212b);border-color:#ec4b56;color:#fff;box-shadow:0 0 22px rgba(230,57,70,.3)}.container{width:min(1100px,100%);margin:auto;padding:12px 10px 48px}.view{display:none}.view.active{display:block}.status-strip{display:flex;justify-content:space-between;gap:8px 16px;flex-wrap:wrap;margin:2px 2px 12px;color:var(--muted);font-size:11px}.status-strip>div:first-child{display:flex;align-items:center;gap:7px;color:var(--text)}.status-meta{display:flex;gap:12px;flex-wrap:wrap}.status-dot{width:9px;height:9px;border-radius:50%;background:#768497}.status-dot.live{background:var(--green);box-shadow:0 0 0 4px rgba(46,212,122,.13)}.status-dot.error{background:var(--red)}.warning{margin-bottom:12px;padding:10px 12px;border:1px solid #6a5421;border-radius:12px;background:#2d2615;color:#ffd878;font-size:11px}
 /* ARENA */
@@ -42,7 +44,30 @@ html[data-theme="light"]{--red:#c4202d;--blue:#1565c0}.tech-tab.active{backgroun
 @media(max-width:700px){.topbar{position:static;padding:max(8px,env(safe-area-inset-top)) max(14px,env(safe-area-inset-right)) 8px max(14px,env(safe-area-inset-left))}.topbar h1{font-size:20px}.mode-nav{position:fixed;top:auto;bottom:0;left:0;right:0;z-index:40;gap:6px;padding:6px 8px calc(6px + env(safe-area-inset-bottom));border-top:1px solid var(--border);border-bottom:0}.mode-btn{grid-template-columns:1fr;justify-items:center;text-align:center;gap:2px;padding:6px 4px}.mode-icon{width:30px;height:30px}.mode-copy small{display:none}.mode-copy strong{font-size:11px}.container{padding-bottom:calc(96px + env(safe-area-inset-bottom))}}
 @media(max-width:430px){.arena-shell{min-height:0;padding:12px}.arena-header h2{font-size:24px}.round-badge{width:62px;height:62px}.arena-stage{height:270px}.fighter-avatar{width:101px;height:122px}.fighter-name{font-size:11px}.fighter-name small{font-size:6px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
-\n</style>
+
+/* ===== ARENA 16 BITS ===== */
+.arena-stage{overflow:hidden;background:#0a1024}
+.arena-stage canvas{image-rendering:pixelated;image-rendering:crisp-edges;display:block}
+#cvBG{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.arena-stage .stage-light{display:none}
+.arena-stage .fighter{position:absolute;bottom:4%;width:clamp(96px,31%,190px);animation:none;z-index:3;display:flex;flex-direction:column;align-items:center}
+.arena-stage .fighter-left{left:6%}.arena-stage .fighter-right{right:6%}
+.arena-stage .fighter canvas{width:100%;aspect-ratio:40/48;height:auto}
+.arena-stage .fighter-name{margin-top:2px;padding:2px 6px;background:rgba(5,9,18,.82);border:2px solid #fff;font:700 11px/1.2 ui-monospace,Menlo,Consolas,monospace;letter-spacing:.06em;text-transform:uppercase;box-shadow:2px 2px 0 #000}
+.arena-stage .fighter-left .fighter-name{border-color:#e63946}.arena-stage .fighter-right .fighter-name{border-color:#2b8cff}
+.arena-stage .stance,.arena-stage .attack{display:none}
+.arena-stage .impact-zone{z-index:5;font-family:ui-monospace,Menlo,Consolas,monospace;text-shadow:2px 2px 0 #000}
+.arena-shell.hit-left .arena-stage,.arena-shell.hit-right .arena-stage{animation:px-shake .3s steps(4)}
+.arena-shell.big-hit .arena-stage{animation:px-shake .5s steps(6)}
+@keyframes px-shake{0%{transform:translate(0)}25%{transform:translate(-3px,1px)}50%{transform:translate(3px,-1px)}75%{transform:translate(-2px,0)}100%{transform:translate(0)}}
+.arena-stage:after{content:"";position:absolute;inset:0;z-index:6;pointer-events:none;background:repeating-linear-gradient(0deg,rgba(0,0,0,.14) 0 1px,transparent 1px 3px)}
+.arena-shell[data-phase="pre"] .fighter canvas{filter:grayscale(.4)}
+.arena-stage.arena16-off #cvBG,.arena-stage.arena16-off .fighter canvas{display:none}
+@media(prefers-reduced-motion:reduce){.arena-shell .arena-stage{animation:none!important}}
+.arena-stage .fighter-name{white-space:nowrap}.arena-stage .fighter-name small{font-size:9px;opacity:.8}
+@media(max-width:430px){.arena-stage .fighter-name small{display:none}}
+
+</style>
 </head>
 <body>
   <header class="topbar">
@@ -74,7 +99,8 @@ html[data-theme="light"]{--red:#c4202d;--blue:#1565c0}.tech-tab.active{backgroun
       <div><span class="status-dot" id="statusDot"></span><strong id="statusText" role="status">Carregando dados do TSE…</strong></div>
       <div class="status-meta"><span id="tseGenerated">TSE: —</span><span id="updatedAgo">atualizado há —</span></div>
     </section>
-    <div id="warningBox" class="warning hidden" role="alert"></div>\n    <p id="srAnnounce" class="sr-only" aria-live="polite"></p>
+    <div id="warningBox" class="warning hidden" role="alert"></div>
+    <p id="srAnnounce" class="sr-only" aria-live="polite"></p>
 
     <section id="arenaView" class="view active" role="tabpanel" aria-labelledby="tab-arena">
       <section class="arena-shell" id="arenaShell">
@@ -99,56 +125,11 @@ html[data-theme="light"]{--red:#c4202d;--blue:#1565c0}.tech-tab.active{backgroun
         </div>
 
         <div class="arena-stage" id="arenaStage">
-          <div class="stage-light red-light"></div>
-          <div class="stage-light blue-light"></div>
-          <div class="fighter fighter-left" id="fighterLula">
-            <div class="fighter-aura"></div>
-            <div class="fighter-avatar fighter-portrait lula-portrait" aria-label="Avatar estilizado de Lula">
-              <svg viewBox="0 0 160 190" aria-hidden="true">
-                <defs><linearGradient id="skinL" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#efc4a4"/><stop offset="1" stop-color="#a9654d"/></linearGradient></defs>
-                <path class="suit" d="M19 190c4-47 25-69 61-69s57 22 61 69z"/>
-                <path class="shirt" d="M59 125h42l-7 56H66z"/>
-                <path class="tie lula-tie" d="M78 134h9l7 47H69z"/>
-                <ellipse class="neck" cx="80" cy="120" rx="24" ry="25"/>
-                <path class="ear" d="M35 72c-10-2-14 10-7 23 4 8 10 10 15 4z"/>
-                <path class="ear" d="M125 72c10-2 14 10 7 23-4 8-10 10-15 4z"/>
-                <path class="face" fill="url(#skinL)" d="M39 51c8-29 70-36 83-2 9 23 2 63-14 78-16 15-42 15-58-1-16-16-23-51-11-75z"/>
-                <path class="hair hair-lula" d="M38 59c-4-28 18-49 45-49 30 0 49 19 43 52-10-12-23-18-37-17-20 1-34 9-51 14z"/>
-                <path class="hair hair-lula side" d="M37 54c-9 10-8 31-2 43l12-3-2-30zM123 52c9 12 7 31 1 43l-12-3 3-31z"/>
-                <path class="brow" d="M51 68q14-10 27 0M84 67q14-10 25 0"/>
-                <circle class="eye" cx="65" cy="75" r="3.2"/><circle class="eye" cx="98" cy="74" r="3.2"/>
-                <path class="nose" d="M81 74q-4 17 3 23"/>
-                <path class="beard" d="M46 90c5 28 18 42 35 43 18 0 31-14 36-44-8 8-19 11-35 11-15 0-27-3-36-10z"/>
-                <path class="mouth" d="M67 104q14 7 28-1"/>
-              </svg>
-            </div>
-            <div class="fighter-name">LULA <small>PT · 13</small></div>
-            <div class="stance"><i class="fist fist-front"></i><i class="fist fist-back"></i></div>
-          </div>
+          <canvas id="cvBG" width="128" height="96" aria-hidden="true"></canvas>
+          <div class="stage-light red-light"></div><div class="stage-light blue-light"></div>
+          <div class="fighter fighter-left" id="fighterLula"><canvas id="cvLula" width="40" height="48" role="img" aria-label="Personagem em pixel art, lado de Lula"></canvas><div class="fighter-name">LULA <small>PT · 13</small></div></div>
           <div class="impact-zone" id="impactZone"><span id="impactText">APURAÇÃO</span></div>
-          <div class="fighter fighter-right" id="fighterFlavio">
-            <div class="fighter-aura"></div>
-            <div class="fighter-avatar fighter-portrait flavio-portrait" aria-label="Avatar estilizado de Flávio Bolsonaro">
-              <svg viewBox="0 0 160 190" aria-hidden="true">
-                <defs><linearGradient id="skinF" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#edbd97"/><stop offset="1" stop-color="#aa684d"/></linearGradient></defs>
-                <path class="suit" d="M18 190c5-47 26-69 62-69s58 22 62 69z"/>
-                <path class="shirt" d="M59 125h42l-7 56H66z"/>
-                <path class="tie flavio-tie" d="M77 134h10l7 47H69z"/>
-                <ellipse class="neck" cx="80" cy="120" rx="24" ry="25"/>
-                <path class="ear" d="M35 72c-10-2-14 10-7 23 4 8 10 10 15 4z"/>
-                <path class="ear" d="M125 72c10-2 14 10 7 23-4 8-10 10-15 4z"/>
-                <path class="face" fill="url(#skinF)" d="M40 48c10-27 67-32 81 1 10 24 3 62-13 78-16 15-42 15-58 0-16-15-22-53-10-79z"/>
-                <path class="hair hair-flavio" d="M39 60c-5-35 18-52 45-51 27 0 45 14 43 46-13-10-28-14-44-13-18 1-32 7-44 18z"/>
-                <path class="brow strong" d="M50 69q14-9 28-1M85 68q14-9 27 0"/>
-                <circle class="eye" cx="65" cy="76" r="3.2"/><circle class="eye" cx="99" cy="75" r="3.2"/>
-                <path class="nose" d="M82 74q-3 17 4 23"/>
-                <path class="jaw" d="M50 104q30 24 61-1"/>
-                <path class="mouth" d="M68 104q14 4 27-1"/>
-              </svg>
-            </div>
-            <div class="fighter-name">FLÁVIO <small>PL · 22</small></div>
-            <div class="stance"><i class="fist fist-front"></i><i class="fist fist-back"></i></div>
-          </div>
+          <div class="fighter fighter-right" id="fighterFlavio"><canvas id="cvFlavio" width="40" height="48" role="img" aria-label="Personagem em pixel art, lado de Flávio Bolsonaro"></canvas><div class="fighter-name">FLÁVIO <small>PL · 22</small></div></div>
           <div class="attack attack-left" id="attackLeft"><i class="pulse"></i></div>
           <div class="attack attack-right" id="attackRight"><i class="pulse"></i></div>
         </div>
@@ -210,12 +191,16 @@ html[data-theme="light"]{--red:#c4202d;--blue:#1565c0}.tech-tab.active{backgroun
           <div class="share-footer"><span id="shareTime">TSE: —</span><strong>Fonte: TSE</strong></div>
         </div>
       </section>
-      <button id="shareImg" class="copy-btn share-image-btn" type="button">Compartilhar / salvar imagem 1080×1350</button>\n    <section class="panel captions-panel"><div class="panel-heading"><div><p class="eyebrow">LEGENDAS</p><h2>Texto pronto</h2></div></div><div class="caption-grid"><article><div class="caption-head"><strong>Instagram</strong><button class="copy-btn" data-copy="instagramCaption">Copiar</button></div><textarea id="instagramCaption" readonly></textarea></article><article><div class="caption-head"><strong>WhatsApp</strong><button class="copy-btn" data-copy="whatsappCaption">Copiar</button></div><textarea id="whatsappCaption" readonly></textarea></article></div></section>
+      <button id="shareImg" class="copy-btn share-image-btn" type="button">Compartilhar / salvar imagem 1080×1350</button>
+    <section class="panel captions-panel"><div class="panel-heading"><div><p class="eyebrow">LEGENDAS</p><h2>Texto pronto</h2></div></div><div class="caption-grid"><article><div class="caption-head"><strong>Instagram</strong><button class="copy-btn" data-copy="instagramCaption">Copiar</button></div><textarea id="instagramCaption" readonly></textarea></article><article><div class="caption-head"><strong>WhatsApp</strong><button class="copy-btn" data-copy="whatsappCaption">Copiar</button></div><textarea id="whatsappCaption" readonly></textarea></article></div></section>
     </section>
 
     <footer><p>Visualização independente baseada exclusivamente nos arquivos públicos do Tribunal Superior Eleitoral. Sem projeções ou estimativas.</p><p><a href="https://resultados.tse.jus.br/" target="_blank" rel="noopener">Resultados TSE</a></p></footer>
   </main>
 
   <div id="tooltip" class="tooltip hidden"></div>
-  <script src="./core.js"></script>\n  <script src="./app.js"></script>\n</body>
+  <script src="./core.js"></script>
+  <script src="./arena16.js"></script>
+  <script src="./app.js"></script>
+</body>
 </html>
