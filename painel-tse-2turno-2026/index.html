@@ -62,7 +62,11 @@ html[data-theme="light"]{--red:#c4202d;--blue:#1565c0}.tech-tab.active{backgroun
 @keyframes px-shake{0%{transform:translate(0)}25%{transform:translate(-3px,1px)}50%{transform:translate(3px,-1px)}75%{transform:translate(-2px,0)}100%{transform:translate(0)}}
 .arena-stage:after{content:"";position:absolute;inset:0;z-index:6;pointer-events:none;background:repeating-linear-gradient(0deg,rgba(0,0,0,.14) 0 1px,transparent 1px 3px)}
 .arena-shell[data-phase="pre"] .fighter canvas{filter:grayscale(.4)}
+.arena-stage.arena16-off{background:linear-gradient(#0f1833 0,#2e3d76 45%,#b0708a 62%,#262d3f 62%,#262d3f 100%)}
 .arena-stage.arena16-off #cvBG,.arena-stage.arena16-off .fighter canvas{display:none}
+.arena-stage.arena16-off:before{content:"";position:absolute;left:10%;right:10%;top:34%;height:26%;z-index:1;background:repeating-linear-gradient(90deg,#f3f6fa 0 3px,#17324a 3px 14px);border-top:8px solid #e9eef4}
+.arena-stage.arena16-off .fighter:before{content:"";width:46%;aspect-ratio:1/2.4;margin-bottom:4px;border-radius:40% 40% 8% 8%/22% 22% 4% 4%;background:linear-gradient(180deg,#e2ac85 0 20%,#1b2640 20% 100%);box-shadow:inset 0 -2px 0 rgba(0,0,0,.4)}
+.arena-stage.arena16-off .fighter-left:before{box-shadow:inset 0 0 0 3px #e63946}.arena-stage.arena16-off .fighter-right:before{box-shadow:inset 0 0 0 3px #2b8cff}
 @media(prefers-reduced-motion:reduce){.arena-shell .arena-stage{animation:none!important}}
 .arena-stage .fighter-name{white-space:nowrap}.arena-stage .fighter-name small{font-size:9px;opacity:.8}
 @media(max-width:430px){.arena-stage .fighter-name small{display:none}}

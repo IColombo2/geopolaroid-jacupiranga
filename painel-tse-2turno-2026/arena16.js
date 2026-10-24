@@ -66,22 +66,31 @@
     const S = ["#0a1024", "#0f1833", "#152245", "#1f2f5c", "#2e3d76", "#4a4a86", "#7a5a8c", "#b0708a"];
     for (let i = 0; i < S.length; i++) { R(0, i * 6, BW, i === S.length - 1 ? 24 : 6, S[i]); if (i < S.length - 1) for (let x = 0; x < BW; x += 2) R(x + (i & 1), i * 6 + 5, 1, 1, S[i + 1]); }
     for (let i = 0; i < 28; i++) { const x = (rnd() * BW) | 0, y = (rnd() * 30) | 0; R(x, y, 1, 1, rnd() < .3 ? "#ffffff" : "#9fb0d8"); }
-    // Palácio do Planalto (fachada frontal simplificada): laje, vidro, colunas curvas, plataforma, rampa
-    R(14, 32, 94, 2, "#d5dce6"); R(12, 34, 98, 4, "#eef2f7"); R(12, 38, 98, 1, "#8f9db0");
-    R(14, 39, 94, 19, "#17324a");
-    for (let x = 14; x < 108; x += 6) { R(x, 39, 1, 19, "#2d5a78"); for (let y = 42; y < 56; y += 6) if (rnd() < .35) R(x + 2, y, 3, 3, "#f5c451"); }
-    const n = 19;
-    for (let i = 0; i < n; i++) { const cx = 15 + Math.round(i * (92 / (n - 1))); R(cx - 1, 39, 3, 3, "#f3f6fa"); R(cx + 1, 39, 1, 3, "#aab6c6"); R(cx, 42, 1, 13, "#f3f6fa"); R(cx - 1, 55, 3, 4, "#f3f6fa"); R(cx + 1, 55, 1, 4, "#aab6c6"); }
-    R(10, 58, 102, 3, "#cdd5e0"); R(10, 61, 102, 1, "#8a97aa"); R(8, 62, 106, 2, "#aeb9c8"); R(6, 64, 110, 2, "#8f9bb0");
-    for (let x = 28; x <= 56; x++) { const y = 72 - (((x - 28) * 8 / 28) | 0); R(x, y, 1, 3, "#e4e9f0"); R(x, y - 2, 1, 1, "#9aa8bb"); }
-    // mastro e bandeira (verde, losango amarelo, círculo azul)
-    R(116, 14, 1, 52, "#c7cfda"); R(115, 13, 3, 1, "#e6c34d"); R(117, 15, 11, 7, "#1f9d55");
-    [1, 3, 5, 7, 5, 3, 1].forEach((w, i) => R(122 - (w >> 1), 15 + i, w, 1, "#f7d117")); R(121, 17, 3, 3, "#2c4a9a");
-    // praça (piso em perspectiva)
+    // praça primeiro (nada sobrescreve a fachada nem a rampa)
     R(0, 66, BW, 30, "#262d3f");
     [67, 70, 74, 80, 88].forEach(y => R(0, y, BW, 1, "#343d55"));
     for (let i = 0; i <= 8; i++) line(64, 66, i * 16, 95, "#303850");
     R(40, 84, 48, 2, "#3b4663");
+    // Palácio do Planalto: laje longa em balanço, colunas esbeltas com base/topo alargados, vidro iluminado
+    R(10, 30, 102, 2, "#f6f9fc"); R(8, 32, 106, 4, "#e9eef4"); R(8, 36, 106, 1, "#7f8da1"); R(10, 37, 102, 1, "#3e4c61");
+    R(14, 38, 94, 20, "#17324a");
+    for (let x = 14; x < 108; x += 6) { R(x, 38, 1, 20, "#2d5a78"); for (let y = 41; y < 56; y += 6) if (rnd() < .4) R(x + 2, y, 3, 3, "#f5c451"); }
+    const n = 17;
+    for (let i = 0; i < n; i++) {
+      const cx = 15 + Math.round(i * (92 / (n - 1)));
+      R(cx - 1, 38, 3, 2, "#f3f6fa"); R(cx - 1, 40, 2, 2, "#f3f6fa");           // capitel
+      R(cx, 42, 1, 12, "#f3f6fa");                                              // fuste fino
+      R(cx - 1, 54, 2, 2, "#f3f6fa"); R(cx - 1, 56, 3, 2, "#f3f6fa"); R(cx + 1, 56, 1, 2, "#aab6c6"); // base alargada
+    }
+    R(8, 58, 106, 2, "#d7dee8"); R(8, 60, 106, 1, "#8a97aa"); R(6, 61, 110, 2, "#aeb9c8"); R(4, 63, 114, 3, "#8f9bb0");
+    // rampa central característica, subindo da praça até a plataforma, com guarda-corpo e sombra
+    for (let x = 26; x <= 66; x++) {
+      const y = 82 - (((x - 26) * 18 / 40) | 0);
+      R(x, y, 1, 3, "#eef2f7"); R(x, y + 3, 1, 2, "#6f7c92"); R(x, y - 3, 1, 1, "#cdd5e0"); if ((x & 3) === 0) R(x, y - 2, 1, 2, "#cdd5e0");
+    }
+    // mastro e bandeira (verde, losango amarelo, círculo azul)
+    R(116, 14, 1, 52, "#c7cfda"); R(115, 13, 3, 1, "#e6c34d"); R(117, 15, 11, 7, "#1f9d55");
+    [1, 3, 5, 7, 5, 3, 1].forEach((w, i) => R(122 - (w >> 1), 15 + i, w, 1, "#f7d117")); R(121, 17, 3, 3, "#2c4a9a");
     // luz vermelha à esquerda e azul à direita (degraus discretos)
     [.22, .16, .10, .05].forEach((a, i) => { R(i * 6, 0, 6, BH, `rgba(230,57,70,${a})`); R(BW - (i + 1) * 6, 0, 6, BH, `rgba(43,140,255,${a})`); });
   }
