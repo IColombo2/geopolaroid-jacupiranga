@@ -1,18 +1,18 @@
 {
   "kind": "pretotalizacao-exterior",
   "election": "2026-2turno-presidente",
-  "updated_at": "2026-10-25T09:00:00-03:00",
+  "updated_at": "2026-10-25T11:04:00-03:00",
   "source": {
-    "name": "g1, reproduzido por TNOnline/UOL",
-    "url": "https://tnonline.uol.com.br/amphtml/eleicoes/2026/lula-vence-na-australia-e-nova-zelandia-flavio-lidera-no-japao-e-malasia-1168075",
-    "note": "Levantamento com boletins de urna. Não é a totalização oficial do TSE."
+    "name": "Ulisses 2026 — agregação de BUs/TSE",
+    "url": "https://ulisses-2026.vercel.app/",
+    "note": "Parcial pré-totalização. O painel Ulisses agrega boletins publicados pela imprensa e substitui por dados oficiais quando o TSE disponibiliza o arquivo correspondente."
   },
   "totals": {
-    "lula": 14629,
-    "flavio": 32870,
-    "valid": 47499,
-    "lula_pct": 30.8,
-    "flavio_pct": 69.2
+    "lula": 15272,
+    "flavio": 33642,
+    "valid": 48914,
+    "lula_pct": 31.2,
+    "flavio_pct": 68.8
   },
   "locations": [
     {
@@ -101,7 +101,15 @@
       "name": "UOL",
       "type": "cobertura do exterior",
       "url": "https://noticias.uol.com.br/internacional/ultimas-noticias/2026/10/25/votacao-exterior-segundo-turno-lula-e-flavio.ghtm"
+    },
+    {
+      "name": "Ulisses 2026",
+      "type": "agregação dinâmica de BUs/TSE",
+      "url": "https://ulisses-2026.vercel.app/"
     }
   ],
-  "source_note": "Os números exibidos na pré-totalização são mantidos em um único snapshot para evitar somar compilações incompatíveis. As demais fontes servem para conferência dos boletins publicados."
+  "source_note": "A pré-totalização usa um único snapshot de maior cobertura para evitar somas incompatíveis. O atual é uma agregação dinâmica de boletins/arquivos TSE; quando o arquivo oficial ZZ tiver votos válidos, o painel troca automaticamente para a totalização oficial.",
+  "posts_closed": 18,
+  "posts_total": 186,
+  "countries_count": 13
 }
