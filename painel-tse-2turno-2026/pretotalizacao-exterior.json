@@ -1,54 +1,39 @@
 {
   "kind": "pretotalizacao-exterior",
   "election": "2026-2turno-presidente",
-  "updated_at": "2026-10-25T11:04:00-03:00",
+  "updated_at": "2026-10-25T12:55:00-03:00",
   "source": {
     "name": "Ulisses 2026 — agregação de BUs/TSE",
-    "url": "https://ulisses-2026.vercel.app/",
-    "note": "Parcial pré-totalização. O painel Ulisses agrega boletins publicados pela imprensa e substitui por dados oficiais quando o TSE disponibiliza o arquivo correspondente."
+    "url": "https://ulisses2026.com.br/",
+    "note": "Parcial pré-totalização baseada em boletins de urna divulgados pela imprensa e conferência com arquivos do TSE. Sem valor de totalização oficial."
   },
   "totals": {
-    "lula": 15272,
-    "flavio": 33642,
-    "valid": 48914,
-    "lula_pct": 31.2,
-    "flavio_pct": 68.8
+    "lula": 16487,
+    "flavio": 34027,
+    "valid": 50514,
+    "lula_pct": 32.6,
+    "flavio_pct": 67.4
   },
   "locations": [
-    {
-      "name": "Austrália",
-      "lula": 6017,
-      "flavio": 3465
-    },
-    {
-      "name": "China",
-      "lula": 502,
-      "flavio": 267
-    },
-    {
-      "name": "Coreia do Sul",
-      "lula": 148,
-      "flavio": 82
-    },
-    {
-      "name": "Filipinas",
-      "lula": 27,
-      "flavio": 39
-    },
-    {
-      "name": "Indonésia",
-      "lula": 15,
-      "flavio": 23
-    },
     {
       "name": "Japão",
       "lula": 7098,
       "flavio": 28538
     },
     {
-      "name": "Malásia",
-      "lula": 41,
-      "flavio": 44
+      "name": "Austrália",
+      "lula": 6017,
+      "flavio": 3465
+    },
+    {
+      "name": "Emirados Árabes Unidos",
+      "lula": 643,
+      "flavio": 772
+    },
+    {
+      "name": "Jordânia",
+      "lula": 725,
+      "flavio": 76
     },
     {
       "name": "Nova Zelândia",
@@ -56,9 +41,39 @@
       "flavio": 101
     },
     {
+      "name": "China",
+      "lula": 375,
+      "flavio": 134
+    },
+    {
+      "name": "Catar",
+      "lula": 159,
+      "flavio": 195
+    },
+    {
       "name": "Singapura",
       "lula": 213,
       "flavio": 121
+    },
+    {
+      "name": "Hong Kong",
+      "lula": 127,
+      "flavio": 133
+    },
+    {
+      "name": "Coreia do Sul",
+      "lula": 148,
+      "flavio": 82
+    },
+    {
+      "name": "Taiwan",
+      "lula": 94,
+      "flavio": 130
+    },
+    {
+      "name": "Síria",
+      "lula": 106,
+      "flavio": 11
     },
     {
       "name": "Tailândia",
@@ -66,9 +81,44 @@
       "flavio": 60
     },
     {
-      "name": "Taiwan",
-      "lula": 94,
-      "flavio": 130
+      "name": "Malásia",
+      "lula": 41,
+      "flavio": 44
+    },
+    {
+      "name": "Arábia Saudita",
+      "lula": 49,
+      "flavio": 31
+    },
+    {
+      "name": "Kuwait",
+      "lula": 62,
+      "flavio": 17
+    },
+    {
+      "name": "Egito",
+      "lula": 60,
+      "flavio": 16
+    },
+    {
+      "name": "Filipinas",
+      "lula": 27,
+      "flavio": 39
+    },
+    {
+      "name": "Índia",
+      "lula": 25,
+      "flavio": 23
+    },
+    {
+      "name": "Quênia",
+      "lula": 29,
+      "flavio": 16
+    },
+    {
+      "name": "Indonésia",
+      "lula": 15,
+      "flavio": 23
     }
   ],
   "sources": [
@@ -106,10 +156,15 @@
       "name": "Ulisses 2026",
       "type": "agregação dinâmica de BUs/TSE",
       "url": "https://ulisses-2026.vercel.app/"
+    },
+    {
+      "name": "Ulisses 2026",
+      "type": "agregação dinâmica de BUs/TSE",
+      "url": "https://ulisses2026.com.br/"
     }
   ],
-  "source_note": "A pré-totalização usa um único snapshot de maior cobertura para evitar somas incompatíveis. O atual é uma agregação dinâmica de boletins/arquivos TSE; quando o arquivo oficial ZZ tiver votos válidos, o painel troca automaticamente para a totalização oficial.",
-  "posts_closed": 18,
+  "source_note": "Snapshot único de maior cobertura para evitar somas incompatíveis entre reportagens. Os números por país são mantidos como pré-totalização; quando o TSE disponibilizar votos válidos em ZZ, a totalização oficial substitui automaticamente estes dados.",
+  "posts_closed": 27,
   "posts_total": 186,
-  "countries_count": 13
+  "countries_count": 21
 }
