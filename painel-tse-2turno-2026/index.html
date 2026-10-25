@@ -159,6 +159,8 @@ html[data-theme="light"]{--red:#c4202d;--blue:#1565c0}.tech-tab.active{backgroun
 .arena-stage.arena16-off .ext-zanin canvas{display:none}
 .arena-stage.arena16-off .ext-zanin:before{content:"";width:46%;aspect-ratio:1/2.4;margin-bottom:4px;border-radius:40% 40% 8% 8%/22% 22% 4% 4%;background:linear-gradient(180deg,#d9a47e 0 20%,#0b0d12 20% 100%)}
 
+
+.chart-actions{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}.evolution-panel.expanded{position:fixed;inset:10px;z-index:120;background:var(--surface);overflow:auto;padding:18px;border:1px solid var(--border);box-shadow:0 24px 80px rgba(0,0,0,.55)}.evolution-panel.expanded .chart-wrap{min-height:min(72vh,760px)}.evolution-panel.expanded #historyChart{width:100%;height:min(72vh,760px)}body.chart-expanded{overflow:hidden}@media(max-width:600px){.evolution-panel.expanded{inset:0;border-radius:0;padding:12px}.chart-actions{width:100%;justify-content:flex-start}.evolution-panel.expanded .chart-wrap{min-height:68vh}.evolution-panel.expanded #historyChart{height:68vh}}
 </style>
 </head>
 <body>
@@ -308,8 +310,8 @@ html[data-theme="light"]{--red:#c4202d;--blue:#1565c0}.tech-tab.active{backgroun
         <article id="stateDetail" class="state-detail"><strong>Toque em uma UF</strong><span>para ver votos, percentuais, seções totalizadas e hora do TSE.</span></article>
       </section>
 
-      <section class="panel">
-        <div class="panel-heading"><div><p class="eyebrow">EVOLUÇÃO NACIONAL</p><h2>Lula × Flávio ao longo da apuração</h2></div><button id="clearHistory" class="text-btn">Limpar histórico</button></div>
+      <section class="panel evolution-panel" id="evolutionPanel">
+        <div class="panel-heading"><div><p class="eyebrow">EVOLUÇÃO NACIONAL</p><h2>Lula × Flávio ao longo da apuração</h2></div><div class="chart-actions"><button id="expandHistory" class="text-btn" type="button" aria-expanded="false">Expandir gráfico</button><button id="clearHistory" class="text-btn" type="button">Limpar histórico</button></div></div>
         <div class="chart-wrap"><svg id="historyChart" viewBox="0 0 760 340"></svg></div>
         <p class="fine-print">Histórico observado neste navegador a partir de quando o painel foi aberto. As duas linhas mostram os percentuais de Lula e Flávio em cada atualização oficial recebida do TSE, sem suavização.</p>
       </section>
@@ -354,6 +356,6 @@ html[data-theme="light"]{--red:#c4202d;--blue:#1565c0}.tech-tab.active{backgroun
   <script src="./core.js?v=20261025-1308"></script>
   <script src="./arena16.js?v=20261025-slowfight1"></script>
   <script src="./prorrogacao.js?v=20261025-prorrogacao1"></script>
-  <script src="./app-regions2.js?v=20261025-ufpower1"></script>
+  <script src="./app-regions2.js?v=20261025-expandchart1"></script>
 </body>
 </html>
