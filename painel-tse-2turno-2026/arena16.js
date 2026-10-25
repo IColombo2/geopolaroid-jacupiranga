@@ -145,10 +145,10 @@
     const set = (side, p) => { ov[side] = p; redraw(); };
     const at = (ms, fn) => ctl.timers.push(setTimeout(() => { if (tok === ctl.token) fn(); }, ms));
     const end = () => { ov.lula = ov.flavio = null; redraw(); };
-    if (who && ev.level === "light") { set(who, "light"); at(120, () => set(other, "hit")); at(750, end); }
-    else if (who && ev.level === "strong") { set(who, "strong"); at(120, () => set(other, "hit")); at(950, end); }
-    else if (who && ev.level === "flip") { set(who, "strong"); at(120, () => set(other, "hit")); at(700, () => { set(who, "cheer"); set(other, "idle0"); }); at(1900, end); }
-    else if (ev.milestone) { set("lula", "guardHigh"); set("flavio", "guardHigh"); at(900, end); }
+    if (who && ev.level === "light") { set(who, "light"); at(220, () => set(other, "hit")); at(1200, end); }
+    else if (who && ev.level === "strong") { set(who, "strong"); at(220, () => set(other, "hit")); at(1500, end); }
+    else if (who && ev.level === "flip") { set(who, "strong"); at(220, () => set(other, "hit")); at(1000, () => { set(who, "cheer"); set(other, "idle0"); }); at(2600, end); }
+    else if (ev.milestone) { set("lula", "guardHigh"); set("flavio", "guardHigh"); at(1300, end); }
   }
   return { init, setPhase, setWinner, setPause, play, SW, SH, BW, BH, _drawChar: drawChar, _drawBG: drawBG, _POSES: Object.keys(POSE) };
 });
