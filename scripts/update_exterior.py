@@ -5,7 +5,7 @@ from datetime import datetime, timezone, timedelta
 
 ROOT=Path(__file__).resolve().parents[1]
 DATA=ROOT/"painel-tse-2turno-2026"/"pretotalizacao-exterior.json"
-SOURCE="https://ulisses-2026.vercel.app/"
+SOURCE="https://ulisses2026.com.br/"
 UA={"User-Agent":"Mozilla/5.0 (compatible; BrasilDecide2026/1.0)"}
 
 def fetch_text(url):
