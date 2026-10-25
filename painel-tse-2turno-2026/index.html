@@ -72,7 +72,21 @@ html[data-theme="light"]{--red:#c4202d;--blue:#1565c0}.tech-tab.active{backgroun
 @media(max-width:430px){.arena-stage .fighter-name small{display:none}}
 
 /* EXTERIOR NA ARENA */
-.exterior-page{max-width:900px;margin:0 auto}.exterior-page .arena-exterior{margin-top:0}.exterior-note{margin:12px 2px 0}.arena-exterior{margin-top:12px;padding:12px;border:1px solid #2b496a;border-radius:14px;background:linear-gradient(135deg,rgba(15,35,58,.92),rgba(9,20,35,.92));box-shadow:inset 0 0 0 1px rgba(255,255,255,.03)}
+.exterior-page{max-width:900px;margin:0 auto}.exterior-page .arena-exterior{margin-top:0}.exterior-note{margin:12px 2px 0}
+.exterior-fight{position:relative;height:280px;margin:12px 0;border:1px solid #28425d;border-radius:14px;overflow:hidden;background:#0a1024}
+.exterior-fight canvas{image-rendering:pixelated;image-rendering:crisp-edges;display:block}
+#extCvBG{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ext-fighter{position:absolute;bottom:3%;width:clamp(88px,25%,150px);z-index:2;text-align:center}
+.ext-fighter.left{left:7%}.ext-fighter.right{right:7%}
+.ext-fighter canvas{width:100%;height:auto;aspect-ratio:40/48}
+.ext-fighter-name{display:inline-block;margin-top:2px;padding:2px 7px;border-radius:7px;background:rgba(5,9,18,.82);font:700 10px/1.2 ui-monospace,Menlo,Consolas,monospace;color:#fff}
+.ext-fighter.left .ext-fighter-name{border:2px solid var(--red)}.ext-fighter.right .ext-fighter-name{border:2px solid var(--blue)}
+.ext-impact{position:absolute;z-index:3;left:50%;top:48%;transform:translate(-50%,-50%);padding:6px 9px;border-radius:8px;background:rgba(5,9,18,.68);font:900 12px/1 ui-monospace,Menlo,Consolas,monospace;color:#ffd166;text-shadow:2px 2px 0 #000}
+.ext-scoreline{position:absolute;z-index:3;left:12px;right:12px;top:10px;display:flex;justify-content:space-between;gap:12px;font:900 20px/1 ui-monospace,Menlo,Consolas,monospace}.ext-scoreline .l{color:var(--red)}.ext-scoreline .r{color:var(--blue)}
+.exterior-sources{margin-top:12px;padding-top:10px;border-top:1px solid rgba(255,255,255,.08)}.exterior-sources h3{margin:0 0 7px;font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+.exterior-source-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}.exterior-source-grid a{display:block;padding:8px 9px;border:1px solid rgba(255,255,255,.08);border-radius:9px;background:rgba(255,255,255,.025);color:inherit;text-decoration:none}.exterior-source-grid a:hover{border-color:#4f789d}.exterior-source-grid strong{display:block;font-size:10px}.exterior-source-grid span{display:block;margin-top:2px;color:var(--muted);font-size:9px}
+@media(max-width:430px){.exterior-fight{height:230px}.ext-scoreline{font-size:17px}.exterior-source-grid{grid-template-columns:1fr}}
+.arena-exterior{margin-top:12px;padding:12px;border:1px solid #2b496a;border-radius:14px;background:linear-gradient(135deg,rgba(15,35,58,.92),rgba(9,20,35,.92));box-shadow:inset 0 0 0 1px rgba(255,255,255,.03)}
 .arena-exterior.waiting{opacity:.72}
 .arena-exterior.pretotal{border-color:#725d22;background:linear-gradient(135deg,rgba(52,42,16,.92),rgba(22,27,37,.94))}
 .arena-exterior.pretotal .arena-exterior-pst{color:#ffd166}
@@ -188,6 +202,13 @@ html[data-theme="light"]{--red:#c4202d;--blue:#1565c0}.tech-tab.active{backgroun
     <section id="exteriorView" class="view" role="tabpanel" aria-labelledby="tab-exterior">
       <section class="panel exterior-page">
         <div class="panel-heading"><div><p class="eyebrow">VOTO NO EXTERIOR</p><h2>Boletins e totalização</h2></div></div>
+        <section class="exterior-fight" aria-label="Arena 16 bits do voto no exterior">
+          <canvas id="extCvBG" width="128" height="96" aria-hidden="true"></canvas>
+          <div class="ext-scoreline"><span class="l" id="extLulaPct">—</span><span class="r" id="extFlavioPct">—</span></div>
+          <div class="ext-fighter left"><canvas id="extCvLula" width="40" height="48" role="img" aria-label="Personagem em pixel art, lado de Lula"></canvas><div class="ext-fighter-name">LULA · 13</div></div>
+          <div class="ext-impact"><span id="extImpactText">EXTERIOR</span></div>
+          <div class="ext-fighter right"><canvas id="extCvFlavio" width="40" height="48" role="img" aria-label="Personagem em pixel art, lado de Flávio"></canvas><div class="ext-fighter-name">FLÁVIO · 22</div></div>
+        </section>
         <section class="arena-exterior waiting" id="arenaExterior" aria-label="Apuração do voto no exterior">
           <div class="arena-exterior-head">
             <div class="arena-exterior-title"><span class="arena-exterior-globe" aria-hidden="true">🌐</span><div><strong id="arenaExteriorStatus">Aguardando dados do exterior</strong><small id="arenaExteriorSub">Votação fora do Brasil</small></div></div>
@@ -200,6 +221,10 @@ html[data-theme="light"]{--red:#c4202d;--blue:#1565c0}.tech-tab.active{backgroun
           <div class="arena-exterior-meta"><span id="arenaExteriorDiff">Dados serão exibidos assim que disponíveis.</span><span id="arenaExteriorTime">—</span></div>
           <div id="arenaPreCountries" class="pre-country-grid hidden"></div>
           <a id="arenaExteriorSource" class="arena-exterior-source hidden" href="#" target="_blank" rel="noopener">Fonte dos boletins</a>
+          <section class="exterior-sources">
+            <h3>Fontes e conferência</h3>
+            <div id="arenaExteriorSources" class="exterior-source-grid hidden"></div>
+          </section>
         </section>
 
         <p class="fine-print exterior-note">Antes da totalização oficial, esta aba mostra apenas boletins locais publicados e identificados pela fonte. Assim que o TSE disponibilizar votos válidos em <strong>ZZ</strong>, os dados oficiais substituem automaticamente a pré-totalização.</p>
