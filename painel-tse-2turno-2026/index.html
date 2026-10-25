@@ -135,9 +135,8 @@ html[data-theme="light"]{--red:#c4202d;--blue:#1565c0}.tech-tab.active{backgroun
 .arena-exterior-cand.lula{border-left:3px solid var(--red)}.arena-exterior-cand.flavio{border-left:3px solid var(--blue)}
 .arena-exterior-meta{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:9px;color:var(--muted);font-size:10px}
  .pre-country-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;margin-top:10px}
-.pre-country{padding:7px 8px;border:1px solid rgba(255,255,255,.08);border-radius:9px;background:rgba(255,255,255,.025)}
-.pre-country strong{display:block;font-size:10px}
-.pre-country span{display:block;margin-top:2px;color:var(--muted);font-size:9px}
+.pre-country{padding:9px 10px;border:1px solid rgba(255,255,255,.09);border-radius:10px;background:linear-gradient(135deg,var(--lead-bg,rgba(255,255,255,.03)),rgba(8,15,25,.76));box-shadow:inset 0 0 0 1px rgba(255,255,255,.025)}
+.pre-country-head{display:flex;align-items:center;justify-content:space-between;gap:8px}.pre-country-head strong{display:block;font-size:10px}.pre-country-head b{font-size:9px;white-space:nowrap}.lead-lula .pre-country-head b{color:#ffd6da}.lead-flavio .pre-country-head b{color:#d6e9ff}.lead-tie .pre-country-head b{color:#d5dbe3}.pre-country-share{display:flex;height:7px;margin:7px 0 6px;overflow:hidden;border-radius:999px;background:#263648}.pre-country-share i{display:block;height:100%}.pre-country-share .l{background:#e63946}.pre-country-share .f{background:#2b8cff}.pre-country span{display:block;margin-top:2px;color:#d4deea;font-size:9px}.exterior-lead-legend{display:flex;align-items:center;justify-content:center;gap:7px;flex-wrap:wrap;margin:8px 0 2px;color:var(--muted);font-size:9px}.exterior-lead-legend .ramp{width:min(220px,55vw);height:9px;border-radius:999px;background:linear-gradient(90deg,#8d1720 0%,#e63946 32%,#77818d 50%,#2b8cff 68%,#0d4d9c 100%)}
 .arena-exterior-source{display:inline-block;margin-top:9px;color:#ffd166;font-size:10px;font-weight:700;text-decoration:none}
 .arena-exterior-source:hover{text-decoration:underline}
 @media(max-width:430px){.arena-exterior-scores{grid-template-columns:1fr}.arena-exterior-head{align-items:flex-start}.arena-exterior-pst{font-size:18px}.pre-country-grid{grid-template-columns:1fr}}
@@ -257,7 +256,7 @@ html[data-theme="light"]{--red:#c4202d;--blue:#1565c0}.tech-tab.active{backgroun
             <div class="arena-exterior-cand flavio"><span>Flávio · 22</span><strong id="arenaExteriorFlavio">—</strong></div>
           </div>
           <div class="arena-exterior-meta"><span id="arenaExteriorDiff">Dados serão exibidos assim que disponíveis.</span><span id="arenaExteriorTime">—</span></div>
-          <div id="arenaPreCountries" class="pre-country-grid hidden"></div>
+          <div class="exterior-lead-legend"><span>Mais Lula</span><span class="ramp" aria-hidden="true"></span><span>Mais Flávio</span></div><div id="arenaPreCountries" class="pre-country-grid hidden"></div>
           <a id="arenaExteriorSource" class="arena-exterior-source hidden" href="#" target="_blank" rel="noopener">Fonte dos boletins</a>
           <section class="exterior-sources">
             <h3>Fontes e conferência</h3>
@@ -332,6 +331,6 @@ html[data-theme="light"]{--red:#c4202d;--blue:#1565c0}.tech-tab.active{backgroun
   <div id="tooltip" class="tooltip hidden"></div>
   <script src="./core.js?v=20261025-1308"></script>
   <script src="./arena16.js?v=20261025-finalwinner1"></script>
-  <script src="./app.js?v=20261025-exterior30m1"></script>
+  <script src="./app.js?v=20261025-exteriorheat1"></script>
 </body>
 </html>
