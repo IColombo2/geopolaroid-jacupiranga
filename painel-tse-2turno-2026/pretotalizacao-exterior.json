@@ -70,5 +70,38 @@
       "lula": 94,
       "flavio": 130
     }
-  ]
+  ],
+  "sources": [
+    {
+      "name": "Boletins de urna da Justiça Eleitoral/TSE",
+      "type": "origem primária",
+      "url": "https://resultados.tse.jus.br/"
+    },
+    {
+      "name": "g1 (reproduzido por TNOnline/UOL)",
+      "type": "compilação",
+      "url": "https://tnonline.uol.com.br/amphtml/eleicoes/2026/lula-vence-na-australia-e-nova-zelandia-flavio-lidera-no-japao-e-malasia-1168075"
+    },
+    {
+      "name": "CNN Brasil",
+      "type": "verificação independente",
+      "url": "https://www.cnnbrasil.com.br/internacional/eleicoes-2026-exterior-boletins-urna-flavio-lula/"
+    },
+    {
+      "name": "Exame",
+      "type": "verificação independente",
+      "url": "https://exame.com/brasil/china-coreia-do-sul-e-australia-em-quais-paises-lula-venceu-flavio-bolsonaro/"
+    },
+    {
+      "name": "Jornal Razão",
+      "type": "painel por país / boletins",
+      "url": "https://jornalrazao.com/politica/segundo-turno-exterior-resultado-paises-asia"
+    },
+    {
+      "name": "UOL",
+      "type": "cobertura do exterior",
+      "url": "https://noticias.uol.com.br/internacional/ultimas-noticias/2026/10/25/votacao-exterior-segundo-turno-lula-e-flavio.ghtm"
+    }
+  ],
+  "source_note": "Os números exibidos na pré-totalização são mantidos em um único snapshot para evitar somar compilações incompatíveis. As demais fontes servem para conferência dos boletins publicados."
 }
