@@ -148,10 +148,43 @@
       "url": "https://ulisses2026.com.br/"
     }
   ],
-  "source_note": "Amostra única de 50.514 votos em 27/186 postos e 21 países. Mantida após cruzamento com fontes que reproduzem boletins de urna/TSE. Não são somadas reportagens com snapshots divergentes. Quando o TSE disponibilizar votos válidos em ZZ, a totalização oficial substitui automaticamente esta pré-totalização.",
+  "source_note": "O total geral permanece um snapshot único para evitar dupla contagem. A seção de boletins verificados pode conter localidades adicionais da Europa, Oriente Médio e, quando publicados, Estados Unidos; esses boletins não são somados novamente ao total agregado. O arquivo oficial ZZ do TSE tem prioridade absoluta quando disponível.",
   "posts_closed": 27,
   "posts_total": 186,
   "countries_count": 21,
   "last_verified_at": "2026-10-25T15:35:00-03:00",
-  "verification_status": "mantido após cruzamento com CNN Brasil, Folha/UOL e boletins/TSE; nenhuma parcial agregada de maior cobertura foi encontrada"
+  "verification_status": "mantido após cruzamento com CNN Brasil, Folha/UOL e boletins/TSE; nenhuma parcial agregada de maior cobertura foi encontrada",
+  "verified_bulletins": [
+    {
+      "location": "Berlim, Alemanha",
+      "region": "Europa",
+      "lula": 5681,
+      "flavio": 719,
+      "source": "Folha de S.Paulo / BBC News Brasil",
+      "source_url": "https://www1.folha.uol.com.br/poder/2026/10/lula-vence-em-milao-e-na-palestina-e-flavio-lidera-em-israel-no-voto-do-exterior.shtml",
+      "source_basis": "resultado divulgado a partir de boletins do exterior",
+      "verified_at": "2026-10-25T15:35:00-03:00"
+    },
+    {
+      "location": "Israel",
+      "region": "Oriente Médio",
+      "lula": 166,
+      "flavio": 699,
+      "source": "Folha de S.Paulo",
+      "source_url": "https://www1.folha.uol.com.br/poder/2026/10/lula-vence-em-milao-e-na-palestina-e-flavio-lidera-em-israel-no-voto-do-exterior.shtml",
+      "source_basis": "resultado divulgado a partir de boletins do exterior",
+      "verified_at": "2026-10-25T15:35:00-03:00"
+    },
+    {
+      "location": "Palestina",
+      "region": "Oriente Médio",
+      "lula": 1000,
+      "flavio": 46,
+      "source": "Folha de S.Paulo",
+      "source_url": "https://www1.folha.uol.com.br/poder/2026/10/lula-vence-em-milao-e-na-palestina-e-flavio-lidera-em-israel-no-voto-do-exterior.shtml",
+      "source_basis": "resultado divulgado a partir de boletins do exterior",
+      "verified_at": "2026-10-25T15:35:00-03:00"
+    }
+  ],
+  "polling_interval_minutes": 10
 }
