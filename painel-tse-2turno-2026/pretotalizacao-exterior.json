@@ -1,0 +1,74 @@
+{
+  "kind": "pretotalizacao-exterior",
+  "election": "2026-2turno-presidente",
+  "updated_at": "2026-10-25T09:00:00-03:00",
+  "source": {
+    "name": "g1, reproduzido por TNOnline/UOL",
+    "url": "https://tnonline.uol.com.br/amphtml/eleicoes/2026/lula-vence-na-australia-e-nova-zelandia-flavio-lidera-no-japao-e-malasia-1168075",
+    "note": "Levantamento com boletins de urna. Não é a totalização oficial do TSE."
+  },
+  "totals": {
+    "lula": 14629,
+    "flavio": 32870,
+    "valid": 47499,
+    "lula_pct": 30.8,
+    "flavio_pct": 69.2
+  },
+  "locations": [
+    {
+      "name": "Austrália",
+      "lula": 6017,
+      "flavio": 3465
+    },
+    {
+      "name": "China",
+      "lula": 502,
+      "flavio": 267
+    },
+    {
+      "name": "Coreia do Sul",
+      "lula": 148,
+      "flavio": 82
+    },
+    {
+      "name": "Filipinas",
+      "lula": 27,
+      "flavio": 39
+    },
+    {
+      "name": "Indonésia",
+      "lula": 15,
+      "flavio": 23
+    },
+    {
+      "name": "Japão",
+      "lula": 7098,
+      "flavio": 28538
+    },
+    {
+      "name": "Malásia",
+      "lula": 41,
+      "flavio": 44
+    },
+    {
+      "name": "Nova Zelândia",
+      "lula": 418,
+      "flavio": 101
+    },
+    {
+      "name": "Singapura",
+      "lula": 213,
+      "flavio": 121
+    },
+    {
+      "name": "Tailândia",
+      "lula": 56,
+      "flavio": 60
+    },
+    {
+      "name": "Taiwan",
+      "lula": 94,
+      "flavio": 130
+    }
+  ]
+}
