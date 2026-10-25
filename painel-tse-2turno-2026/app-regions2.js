@@ -3,7 +3,7 @@ const {normalize,judge,parseTseTime,freshness,snap,classify,reconcile,margin,sig
 const CONFIG={yearPath:"ele2026",electionId:"6258",office:"0001",baseOrigin:"https://resultados.tse.jus.br/oficial",
 topoUrls:["./uf.json","https://raw.githubusercontent.com/fititnt/gis-dataset-brasil/master/uf/topojson/uf.json"],
 libs:[["https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js","sha384-CjloA8y00+1SDAUkjs099PVfnY2KmDC2BZnws9kh8D/lX1s46w6EPhpXdqMfjK6i"],["https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js","sha384-Ukv1p/xTma6P4/2bY5KzWBw+ydSpXmhCMtyciIQVDJ1RmOxtCYNMF1uXT9T63H67"]],
-refreshMs:60000,finalRefreshMs:300000,requestGapMs:150,fetchTimeoutMs:12000,historyPrefix:"tse2026_2turno_hist_v3_",cachePrefix:"tse2026_2turno_cache_v3_",colors:{lula:"#e63946",flavio:"#2b8cff"}};
+refreshMs:30000,finalRefreshMs:300000,requestGapMs:150,fetchTimeoutMs:12000,historyPrefix:"tse2026_2turno_hist_v3_",cachePrefix:"tse2026_2turno_cache_v3_",colors:{lula:"#e63946",flavio:"#2b8cff"}};
 const UFS=["ac","al","ap","am","ba","ce","df","es","go","ma","mt","ms","mg","pa","pb","pr","pe","pi","rj","rn","rs","ro","rr","sc","sp","se","to"],SCOPES=["br",...UFS,"zz"];
 const PANEL_URL="https://icolombo2.github.io/geopolaroid-jacupiranga/painel-tse-2turno-2026/";
 const VOTING_END=Date.parse("2026-10-25T17:00:00-03:00");
