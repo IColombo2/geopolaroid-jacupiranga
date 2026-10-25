@@ -116,7 +116,7 @@ html[data-theme="light"]{--red:#c4202d;--blue:#1565c0}.tech-tab.active{backgroun
 .ext-impact{position:absolute;z-index:3;left:50%;top:48%;transform:translate(-50%,-50%);padding:6px 9px;border-radius:8px;background:rgba(5,9,18,.68);font:900 12px/1 ui-monospace,Menlo,Consolas,monospace;color:#ffd166;text-shadow:2px 2px 0 #000}
 .ext-scoreline{position:absolute;z-index:3;left:12px;right:12px;top:10px;display:flex;justify-content:space-between;gap:12px;font:900 20px/1 ui-monospace,Menlo,Consolas,monospace}.ext-scoreline .l{color:var(--red)}.ext-scoreline .r{color:var(--blue)}
 .exterior-sources{margin-top:12px;padding-top:10px;border-top:1px solid rgba(255,255,255,.08)}.exterior-sources h3{margin:0 0 7px;font-size:11px;letter-spacing:.08em;text-transform:uppercase}
-.exterior-source-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}.exterior-source-grid a{display:block;padding:8px 9px;border:1px solid rgba(255,255,255,.08);border-radius:9px;background:rgba(255,255,255,.025);color:inherit;text-decoration:none}.exterior-source-grid a:hover{border-color:#4f789d}.exterior-source-grid strong{display:block;font-size:10px}.exterior-source-grid span{display:block;margin-top:2px;color:var(--muted);font-size:9px}
+.exterior-source-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}.exterior-source-grid a{display:block;padding:8px 9px;border:1px solid rgba(255,255,255,.08);border-radius:9px;background:rgba(255,255,255,.025);color:inherit;text-decoration:none}.exterior-source-grid a:hover{border-color:#4f789d}.exterior-source-grid strong{display:block;font-size:10px}.exterior-source-grid span{display:block;margin-top:2px;color:var(--muted);font-size:9px}.verified-bus{margin-top:12px;padding-top:10px;border-top:1px solid rgba(255,255,255,.08)}.verified-bus h3{margin:0 0 7px;font-size:11px;letter-spacing:.08em;text-transform:uppercase}.verified-bu-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}.verified-bu{padding:9px 10px;border:1px solid rgba(255,255,255,.09);border-radius:10px;background:linear-gradient(135deg,var(--bu-bg,rgba(255,255,255,.03)),rgba(8,15,25,.8))}.verified-bu-head{display:flex;justify-content:space-between;gap:8px}.verified-bu-head strong{font-size:10px}.verified-bu-head b{font-size:9px}.verified-bu span{display:block;margin-top:3px;font-size:9px;color:#d4deea}.verified-bu a{display:inline-block;margin-top:5px;color:#ffd166;font-size:9px;text-decoration:none}.verified-bu a:hover{text-decoration:underline}@media(max-width:430px){.verified-bu-grid{grid-template-columns:1fr}}
 @media(max-width:430px){.exterior-fight{height:230px}.ext-scoreline{font-size:17px}.exterior-source-grid{grid-template-columns:1fr}}
 .arena-exterior{margin-top:12px;padding:12px;border:1px solid #2b496a;border-radius:14px;background:linear-gradient(135deg,rgba(15,35,58,.92),rgba(9,20,35,.92));box-shadow:inset 0 0 0 1px rgba(255,255,255,.03)}
 .arena-exterior.waiting{opacity:.72}
@@ -258,6 +258,10 @@ html[data-theme="light"]{--red:#c4202d;--blue:#1565c0}.tech-tab.active{backgroun
           <div class="arena-exterior-meta"><span id="arenaExteriorDiff">Dados serão exibidos assim que disponíveis.</span><span id="arenaExteriorTime">—</span></div>
           <div class="exterior-lead-legend"><span>Mais Lula</span><span class="ramp" aria-hidden="true"></span><span>Mais Flávio</span></div><div id="arenaPreCountries" class="pre-country-grid hidden"></div>
           <a id="arenaExteriorSource" class="arena-exterior-source hidden" href="#" target="_blank" rel="noopener">Fonte dos boletins</a>
+          <section class="verified-bus">
+            <h3>Boletins verificados</h3>
+            <div id="arenaVerifiedBUs" class="verified-bu-grid hidden"></div>
+          </section>
           <section class="exterior-sources">
             <h3>Fontes e conferência</h3>
             <div id="arenaExteriorSources" class="exterior-source-grid hidden"></div>
@@ -331,6 +335,6 @@ html[data-theme="light"]{--red:#c4202d;--blue:#1565c0}.tech-tab.active{backgroun
   <div id="tooltip" class="tooltip hidden"></div>
   <script src="./core.js?v=20261025-1308"></script>
   <script src="./arena16.js?v=20261025-finalwinner1"></script>
-  <script src="./app.js?v=20261025-exteriorverify1535"></script>
+  <script src="./app.js?v=20261025-bus10m1"></script>
 </body>
 </html>
