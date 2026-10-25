@@ -153,6 +153,20 @@ html[data-theme="light"]{--red:#c4202d;--blue:#1565c0}.tech-tab.active{backgroun
           </article>
         </div>
 
+        <section class="arena-exterior waiting" id="arenaExterior" aria-label="Apuração do voto no exterior">
+          <div class="arena-exterior-head">
+            <div class="arena-exterior-title"><span class="arena-exterior-globe" aria-hidden="true">🌐</span><div><strong id="arenaExteriorStatus">Aguardando dados do exterior</strong><small id="arenaExteriorSub">Votação fora do Brasil</small></div></div>
+            <strong class="arena-exterior-pst" id="arenaExteriorPst">—</strong>
+          </div>
+          <div class="arena-exterior-scores">
+            <div class="arena-exterior-cand lula"><span>Lula · 13</span><strong id="arenaExteriorLula">—</strong></div>
+            <div class="arena-exterior-cand flavio"><span>Flávio · 22</span><strong id="arenaExteriorFlavio">—</strong></div>
+          </div>
+          <div class="arena-exterior-meta"><span id="arenaExteriorDiff">Dados serão exibidos assim que disponíveis.</span><span id="arenaExteriorTime">—</span></div>
+          <div id="arenaPreCountries" class="pre-country-grid hidden"></div>
+          <a id="arenaExteriorSource" class="arena-exterior-source hidden" href="#" target="_blank" rel="noopener">Fonte dos boletins</a>
+        </section>
+
         <div class="arena-stage" id="arenaStage">
           <canvas id="cvBG" width="128" height="96" aria-hidden="true"></canvas>
           <div class="stage-light red-light"></div><div class="stage-light blue-light"></div>
@@ -176,20 +190,6 @@ html[data-theme="light"]{--red:#c4202d;--blue:#1565c0}.tech-tab.active{backgroun
         <div class="combat-log" id="combatLog">
           <span class="log-dot"></span><strong>Eventos da apuração</strong><span id="combatEvent">Aguardando a primeira atualização com votos.</span>
         </div>
-
-        <section class="arena-exterior waiting" id="arenaExterior" aria-label="Apuração do voto no exterior">
-          <div class="arena-exterior-head">
-            <div class="arena-exterior-title"><span class="arena-exterior-globe" aria-hidden="true">🌐</span><div><strong id="arenaExteriorStatus">Aguardando dados do exterior</strong><small id="arenaExteriorSub">Votação fora do Brasil</small></div></div>
-            <strong class="arena-exterior-pst" id="arenaExteriorPst">—</strong>
-          </div>
-          <div class="arena-exterior-scores">
-            <div class="arena-exterior-cand lula"><span>Lula · 13</span><strong id="arenaExteriorLula">—</strong></div>
-            <div class="arena-exterior-cand flavio"><span>Flávio · 22</span><strong id="arenaExteriorFlavio">—</strong></div>
-          </div>
-          <div class="arena-exterior-meta"><span id="arenaExteriorDiff">Dados serão exibidos assim que disponíveis.</span><span id="arenaExteriorTime">—</span></div>
-          <div id="arenaPreCountries" class="pre-country-grid hidden"></div>
-          <a id="arenaExteriorSource" class="arena-exterior-source hidden" href="#" target="_blank" rel="noopener">Fonte dos boletins</a>
-        </section>
 
         <div class="arena-disclaimer">As animações representam apenas variações verificadas nos dados oficiais. Não há projeções, probabilidades ou “dano” real.</div>
       </section>
