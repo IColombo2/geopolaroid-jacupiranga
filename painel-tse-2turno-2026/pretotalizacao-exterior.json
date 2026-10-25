@@ -1,18 +1,18 @@
 {
   "kind": "pretotalizacao-exterior",
   "election": "2026-2turno-presidente",
-  "updated_at": "2026-10-25T12:55:00-03:00",
+  "updated_at": "2026-10-25T14:50:00-03:00",
   "source": {
-    "name": "Ulisses 2026 — agregação de BUs/TSE",
-    "url": "https://ulisses2026.com.br/",
-    "note": "Parcial pré-totalização baseada em boletins de urna divulgados pela imprensa e conferência com arquivos do TSE. Sem valor de totalização oficial."
+    "name": "Jornal Razão — soma de boletins de urna do TSE",
+    "url": "https://jornalrazao.com/politica/soma-exterior-segundo-turno-flavio-lula-14h50",
+    "note": "Parcial pré-totalização obtida pela soma de boletins de urna publicados no portal de resultados do TSE. Não é a totalização oficial consolidada."
   },
   "totals": {
-    "lula": 16487,
-    "flavio": 34027,
-    "valid": 50514,
-    "lula_pct": 32.6,
-    "flavio_pct": 67.4
+    "lula": 80199,
+    "flavio": 58963,
+    "valid": 139162,
+    "lula_pct": 57.63,
+    "flavio_pct": 42.37
   },
   "locations": [
     {
@@ -21,139 +21,79 @@
       "flavio": 28538
     },
     {
+      "name": "Espanha",
+      "lula": 9293,
+      "flavio": 4289
+    },
+    {
+      "name": "França",
+      "lula": 10676,
+      "flavio": 2039
+    },
+    {
+      "name": "Suíça",
+      "lula": 7089,
+      "flavio": 5419
+    },
+    {
       "name": "Austrália",
       "lula": 6017,
       "flavio": 3465
     },
     {
-      "name": "Emirados Árabes Unidos",
-      "lula": 643,
-      "flavio": 772
+      "name": "Países Baixos",
+      "lula": 5578,
+      "flavio": 1383
     },
     {
-      "name": "Jordânia",
-      "lula": 725,
-      "flavio": 76
+      "name": "Bélgica",
+      "lula": 3064,
+      "flavio": 2154
     },
     {
-      "name": "Nova Zelândia",
-      "lula": 418,
-      "flavio": 101
+      "name": "Líbano",
+      "lula": 2736,
+      "flavio": 1276
     },
     {
-      "name": "China",
-      "lula": 375,
-      "flavio": 134
+      "name": "Suécia",
+      "lula": 2127,
+      "flavio": 591
     },
     {
-      "name": "Catar",
-      "lula": 159,
-      "flavio": 195
-    },
-    {
-      "name": "Singapura",
-      "lula": 213,
-      "flavio": 121
-    },
-    {
-      "name": "Hong Kong",
-      "lula": 127,
-      "flavio": 133
-    },
-    {
-      "name": "Coreia do Sul",
-      "lula": 148,
-      "flavio": 82
-    },
-    {
-      "name": "Taiwan",
-      "lula": 94,
-      "flavio": 130
-    },
-    {
-      "name": "Síria",
-      "lula": 106,
-      "flavio": 11
-    },
-    {
-      "name": "Tailândia",
-      "lula": 56,
-      "flavio": 60
-    },
-    {
-      "name": "Malásia",
-      "lula": 41,
-      "flavio": 44
-    },
-    {
-      "name": "Arábia Saudita",
-      "lula": 49,
-      "flavio": 31
-    },
-    {
-      "name": "Kuwait",
-      "lula": 62,
-      "flavio": 17
-    },
-    {
-      "name": "Egito",
-      "lula": 60,
-      "flavio": 16
-    },
-    {
-      "name": "Filipinas",
-      "lula": 27,
-      "flavio": 39
-    },
-    {
-      "name": "Índia",
-      "lula": 25,
-      "flavio": 23
-    },
-    {
-      "name": "Quênia",
-      "lula": 29,
-      "flavio": 16
-    },
-    {
-      "name": "Indonésia",
-      "lula": 15,
-      "flavio": 23
+      "name": "Dinamarca",
+      "lula": 1383,
+      "flavio": 243
     }
   ],
   "sources": [
+    {
+      "name": "Jornal Razão",
+      "type": "soma seção por seção de boletins de urna do TSE",
+      "url": "https://jornalrazao.com/politica/soma-exterior-segundo-turno-flavio-lula-14h50"
+    },
+    {
+      "name": "Jornal Razão — painel do exterior",
+      "type": "acompanhamento de BUs do TSE",
+      "url": "https://jornalrazao.com/eleicoes/exterior"
+    },
     {
       "name": "Boletins de urna da Justiça Eleitoral/TSE",
       "type": "origem primária",
       "url": "https://resultados.tse.jus.br/"
     },
     {
-      "name": "CNN Brasil",
-      "type": "verificação independente com BUs do TSE",
-      "url": "https://www.cnnbrasil.com.br/internacional/eleicoes-2026-exterior-boletins-urna-flavio-lula/"
-    },
-    {
-      "name": "Folha de S.Paulo / BBC News Brasil",
-      "type": "verificação país a país com BUs do TSE",
-      "url": "https://www1.folha.uol.com.br/mundo/2026/10/voto-no-exterior-veja-os-resultados-por-pais-e-a-apuracao-de-lula-x-flavio-no-2o-turno-das-eleicoes-2026.shtml"
-    },
-    {
-      "name": "UOL",
-      "type": "cobertura atualizada; usada para conferência, com divergências pontuais de snapshot",
-      "url": "https://noticias.uol.com.br/eleicoes/2026/10/25/apuracao-parcial-das-eleicoes-no-exterior-veja-resultados-atualizados-no-segundo-turno.ghtm"
-    },
-    {
-      "name": "Ulisses 2026",
-      "type": "agregação de maior cobertura encontrada",
-      "url": "https://ulisses2026.com.br/"
+      "name": "BBC News Brasil",
+      "type": "conferência independente com boletins do TSE",
+      "url": "https://bbcbreakingnews.pages.dev/portuguese/articles/cw5yn34exenno"
     }
   ],
-  "source_note": "O total geral permanece um snapshot único para evitar dupla contagem. A seção de boletins verificados pode conter localidades adicionais da Europa, Oriente Médio e, quando publicados, Estados Unidos; esses boletins não são somados novamente ao total agregado. O arquivo oficial ZZ do TSE tem prioridade absoluta quando disponível.",
+  "source_note": "O total geral usa um único snapshot de maior cobertura para evitar dupla contagem. A lista país a país abaixo é parcial e não soma todo o agregado. O arquivo oficial ZZ do TSE substitui automaticamente esta pré-totalização quando passar a trazer votos válidos.",
   "posts_closed": 27,
   "posts_total": 186,
-  "countries_count": 21,
-  "last_verified_at": "2026-10-25T15:35:00-03:00",
-  "verification_status": "mantido após cruzamento com CNN Brasil, Folha/UOL e boletins/TSE; nenhuma parcial agregada de maior cobertura foi encontrada",
+  "countries_count": 54,
+  "last_verified_at": "2026-10-25T15:55:00-03:00",
+  "verification_status": "Atualizado para a parcial maior encontrada: 461 boletins de urna do TSE somados em 54 países até 14h50; Lula passou à frente no agregado conhecido.",
   "verified_bulletins": [
     {
       "location": "Berlim, Alemanha",
@@ -186,5 +126,8 @@
       "verified_at": "2026-10-25T15:35:00-03:00"
     }
   ],
-  "polling_interval_minutes": 10
+  "polling_interval_minutes": 10,
+  "urns_counted": 461,
+  "urns_total": 1282,
+  "locations_complete": false
 }
