@@ -128,43 +128,30 @@
       "url": "https://resultados.tse.jus.br/"
     },
     {
-      "name": "g1 (reproduzido por TNOnline/UOL)",
-      "type": "compilação",
-      "url": "https://tnonline.uol.com.br/amphtml/eleicoes/2026/lula-vence-na-australia-e-nova-zelandia-flavio-lidera-no-japao-e-malasia-1168075"
-    },
-    {
       "name": "CNN Brasil",
-      "type": "verificação independente",
+      "type": "verificação independente com BUs do TSE",
       "url": "https://www.cnnbrasil.com.br/internacional/eleicoes-2026-exterior-boletins-urna-flavio-lula/"
     },
     {
-      "name": "Exame",
-      "type": "verificação independente",
-      "url": "https://exame.com/brasil/china-coreia-do-sul-e-australia-em-quais-paises-lula-venceu-flavio-bolsonaro/"
-    },
-    {
-      "name": "Jornal Razão",
-      "type": "painel por país / boletins",
-      "url": "https://jornalrazao.com/politica/segundo-turno-exterior-resultado-paises-asia"
+      "name": "Folha de S.Paulo / BBC News Brasil",
+      "type": "verificação país a país com BUs do TSE",
+      "url": "https://www1.folha.uol.com.br/mundo/2026/10/voto-no-exterior-veja-os-resultados-por-pais-e-a-apuracao-de-lula-x-flavio-no-2o-turno-das-eleicoes-2026.shtml"
     },
     {
       "name": "UOL",
-      "type": "cobertura do exterior",
-      "url": "https://noticias.uol.com.br/internacional/ultimas-noticias/2026/10/25/votacao-exterior-segundo-turno-lula-e-flavio.ghtm"
+      "type": "cobertura atualizada; usada para conferência, com divergências pontuais de snapshot",
+      "url": "https://noticias.uol.com.br/eleicoes/2026/10/25/apuracao-parcial-das-eleicoes-no-exterior-veja-resultados-atualizados-no-segundo-turno.ghtm"
     },
     {
       "name": "Ulisses 2026",
-      "type": "agregação dinâmica de BUs/TSE",
-      "url": "https://ulisses-2026.vercel.app/"
-    },
-    {
-      "name": "Ulisses 2026",
-      "type": "agregação dinâmica de BUs/TSE",
+      "type": "agregação de maior cobertura encontrada",
       "url": "https://ulisses2026.com.br/"
     }
   ],
-  "source_note": "Snapshot único de maior cobertura para evitar somas incompatíveis entre reportagens. Os números por país são mantidos como pré-totalização; quando o TSE disponibilizar votos válidos em ZZ, a totalização oficial substitui automaticamente estes dados.",
+  "source_note": "Amostra única de 50.514 votos em 27/186 postos e 21 países. Mantida após cruzamento com fontes que reproduzem boletins de urna/TSE. Não são somadas reportagens com snapshots divergentes. Quando o TSE disponibilizar votos válidos em ZZ, a totalização oficial substitui automaticamente esta pré-totalização.",
   "posts_closed": 27,
   "posts_total": 186,
-  "countries_count": 21
+  "countries_count": 21,
+  "last_verified_at": "2026-10-25T15:35:00-03:00",
+  "verification_status": "mantido após cruzamento com CNN Brasil, Folha/UOL e boletins/TSE; nenhuma parcial agregada de maior cobertura foi encontrada"
 }
