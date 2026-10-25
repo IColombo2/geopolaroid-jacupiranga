@@ -34,7 +34,7 @@ html[data-theme="light"]{color-scheme:light;--bg:#f4f6f9;--surface:#fff;--surfac
 .status-dot.wait,.status-dot.stale{background:var(--yellow);box-shadow:0 0 0 4px rgba(245,196,81,.15)}
 .legend-ramp{display:inline-block;width:120px;height:10px;border-radius:5px;background:linear-gradient(90deg,#2b8cff,#dceafa 45%,#f4dfe2 55%,#e63946)}
 :focus-visible{outline:3px solid var(--yellow);outline-offset:2px}.uf:focus-visible{stroke:var(--yellow);stroke-width:3}
-html[data-theme="light"]{--red:#c4202d;--blue:#1565c0}.tech-tab.active{background:linear-gradient(135deg,#0f3a6e,#1a64b8)}.share-tab.active{background:linear-gradient(135deg,#5b4510,#8a6a0f)}.mode-live{background:#c4202d;font-size:10px}
+html[data-theme="light"]{--red:#c4202d;--blue:#1565c0}.tech-tab.active{background:linear-gradient(135deg,#0f3a6e,#1a64b8)}.exterior-tab.active{background:linear-gradient(135deg,#184b5b,#14758c);border-color:#24a7c1}.share-tab.active{background:linear-gradient(135deg,#5b4510,#8a6a0f)}.mode-live{background:#c4202d;font-size:10px}
 .eyebrow,.fine-print,footer,.margin-label,.region-state,.map-legend,.tooltip,.arena-disclaimer,.candidate-votes,.majority-note,.combat-log,.state-detail,.share-kicker,.share-candidate span,.share-footer,.fighter-name small,.party{font-size:11px}.mode-copy small{font-size:11px}.margin-label strong,.state-code,.caption-grid textarea{font-size:12px}.axis text{font-size:11px}
 .topbar,.mode-nav{backdrop-filter:none;background:var(--bg)}.stage-light{filter:none}.red-light{background:radial-gradient(ellipse 60% 90% at 30% 0,rgba(230,57,70,.55),transparent 70%)}.blue-light{background:radial-gradient(ellipse 60% 90% at 70% 0,rgba(43,140,255,.55),transparent 70%)}.fighter-aura{filter:none}.fighter-left .fighter-aura{background:radial-gradient(closest-side,rgba(230,57,70,.5),transparent)}.fighter-right .fighter-aura{background:radial-gradient(closest-side,rgba(43,140,255,.5),transparent)}@keyframes portraitFlash{0%,100%{opacity:1}30%{opacity:.55}}
 .attack{font-size:0}.attack .pulse{display:block;width:46px;height:46px;border-radius:50%;background:radial-gradient(circle,#fff 0,#ffd85c 35%,transparent 70%)}.fist{display:block;width:28px;height:28px;font-size:0;border-radius:50% 50% 42% 42%;filter:none}.fighter-left .fist{background:#e63946}.fighter-right .fist{background:#2b8cff}
@@ -72,7 +72,7 @@ html[data-theme="light"]{--red:#c4202d;--blue:#1565c0}.tech-tab.active{backgroun
 @media(max-width:430px){.arena-stage .fighter-name small{display:none}}
 
 /* EXTERIOR NA ARENA */
-.arena-exterior{margin-top:12px;padding:12px;border:1px solid #2b496a;border-radius:14px;background:linear-gradient(135deg,rgba(15,35,58,.92),rgba(9,20,35,.92));box-shadow:inset 0 0 0 1px rgba(255,255,255,.03)}
+.exterior-page{max-width:900px;margin:0 auto}.exterior-page .arena-exterior{margin-top:0}.exterior-note{margin:12px 2px 0}.arena-exterior{margin-top:12px;padding:12px;border:1px solid #2b496a;border-radius:14px;background:linear-gradient(135deg,rgba(15,35,58,.92),rgba(9,20,35,.92));box-shadow:inset 0 0 0 1px rgba(255,255,255,.03)}
 .arena-exterior.waiting{opacity:.72}
 .arena-exterior.pretotal{border-color:#725d22;background:linear-gradient(135deg,rgba(52,42,16,.92),rgba(22,27,37,.94))}
 .arena-exterior.pretotal .arena-exterior-pst{color:#ffd166}
@@ -112,6 +112,10 @@ html[data-theme="light"]{--red:#c4202d;--blue:#1565c0}.tech-tab.active{backgroun
       <span class="mode-icon">⚡</span>
       <span class="mode-copy"><strong>ARENA</strong><small>Confronto ao vivo</small></span>
       <span class="mode-live">AO VIVO</span>
+    </button>
+    <button class="mode-btn exterior-tab" data-mode="exterior" type="button" role="tab" id="tab-exterior" aria-controls="exteriorView" aria-selected="false" tabindex="-1">
+      <span class="mode-icon">🌐</span>
+      <span class="mode-copy"><strong>EXTERIOR</strong><small>Boletins e TSE</small></span>
     </button>
     <button class="mode-btn tech-tab" data-mode="tecnico" type="button" role="tab" id="tab-tecnico" aria-controls="technicalView" aria-selected="false" tabindex="-1">
       <span class="mode-icon">▥</span>
@@ -153,20 +157,6 @@ html[data-theme="light"]{--red:#c4202d;--blue:#1565c0}.tech-tab.active{backgroun
           </article>
         </div>
 
-        <section class="arena-exterior waiting" id="arenaExterior" aria-label="Apuração do voto no exterior">
-          <div class="arena-exterior-head">
-            <div class="arena-exterior-title"><span class="arena-exterior-globe" aria-hidden="true">🌐</span><div><strong id="arenaExteriorStatus">Aguardando dados do exterior</strong><small id="arenaExteriorSub">Votação fora do Brasil</small></div></div>
-            <strong class="arena-exterior-pst" id="arenaExteriorPst">—</strong>
-          </div>
-          <div class="arena-exterior-scores">
-            <div class="arena-exterior-cand lula"><span>Lula · 13</span><strong id="arenaExteriorLula">—</strong></div>
-            <div class="arena-exterior-cand flavio"><span>Flávio · 22</span><strong id="arenaExteriorFlavio">—</strong></div>
-          </div>
-          <div class="arena-exterior-meta"><span id="arenaExteriorDiff">Dados serão exibidos assim que disponíveis.</span><span id="arenaExteriorTime">—</span></div>
-          <div id="arenaPreCountries" class="pre-country-grid hidden"></div>
-          <a id="arenaExteriorSource" class="arena-exterior-source hidden" href="#" target="_blank" rel="noopener">Fonte dos boletins</a>
-        </section>
-
         <div class="arena-stage" id="arenaStage">
           <canvas id="cvBG" width="128" height="96" aria-hidden="true"></canvas>
           <div class="stage-light red-light"></div><div class="stage-light blue-light"></div>
@@ -192,6 +182,27 @@ html[data-theme="light"]{--red:#c4202d;--blue:#1565c0}.tech-tab.active{backgroun
         </div>
 
         <div class="arena-disclaimer">As animações representam apenas variações verificadas nos dados oficiais. Não há projeções, probabilidades ou “dano” real.</div>
+      </section>
+    </section>
+
+    <section id="exteriorView" class="view" role="tabpanel" aria-labelledby="tab-exterior">
+      <section class="panel exterior-page">
+        <div class="panel-heading"><div><p class="eyebrow">VOTO NO EXTERIOR</p><h2>Boletins e totalização</h2></div></div>
+        <section class="arena-exterior waiting" id="arenaExterior" aria-label="Apuração do voto no exterior">
+          <div class="arena-exterior-head">
+            <div class="arena-exterior-title"><span class="arena-exterior-globe" aria-hidden="true">🌐</span><div><strong id="arenaExteriorStatus">Aguardando dados do exterior</strong><small id="arenaExteriorSub">Votação fora do Brasil</small></div></div>
+            <strong class="arena-exterior-pst" id="arenaExteriorPst">—</strong>
+          </div>
+          <div class="arena-exterior-scores">
+            <div class="arena-exterior-cand lula"><span>Lula · 13</span><strong id="arenaExteriorLula">—</strong></div>
+            <div class="arena-exterior-cand flavio"><span>Flávio · 22</span><strong id="arenaExteriorFlavio">—</strong></div>
+          </div>
+          <div class="arena-exterior-meta"><span id="arenaExteriorDiff">Dados serão exibidos assim que disponíveis.</span><span id="arenaExteriorTime">—</span></div>
+          <div id="arenaPreCountries" class="pre-country-grid hidden"></div>
+          <a id="arenaExteriorSource" class="arena-exterior-source hidden" href="#" target="_blank" rel="noopener">Fonte dos boletins</a>
+        </section>
+
+        <p class="fine-print exterior-note">Antes da totalização oficial, esta aba mostra apenas boletins locais publicados e identificados pela fonte. Assim que o TSE disponibilizar votos válidos em <strong>ZZ</strong>, os dados oficiais substituem automaticamente a pré-totalização.</p>
       </section>
     </section>
 
