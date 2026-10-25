@@ -59,6 +59,25 @@
   }
   function PANDS() { return PANTS; }
 
+  /* Ministro Cristiano Zanin (estilizado): toga preta, gola branca, óculos, segurando a decisão. frame 0/1 = respiração */
+  function drawZanin(ctx, frame) {
+    ctx.clearRect(0, 0, SW, SH);
+    const dy = frame ? 1 : 0;
+    const R = (x, y, w, h, col) => { ctx.fillStyle = col; ctx.fillRect(x, y + dy, w, h); };
+    ctx.fillStyle = SHADOW; ctx.fillRect(8, 46, 24, 2);
+    R(8, 20, 5, 17, "#0b0d12"); R(27, 20, 5, 17, "#0b0d12"); R(11, 18, 18, 27, "#0b0d12");
+    R(16, 22, 1, 22, "#1b2030"); R(23, 22, 1, 22, "#1b2030"); R(9, 21, 1, 14, "#1b2030"); R(30, 21, 1, 14, "#1b2030");
+    R(14, 44, 5, 2, SHOE); R(21, 44, 5, 2, SHOE);
+    R(16, 18, 8, 9, SHIRT); R(19, 19, 2, 8, "#c9ccd6"); R(16, 18, 1, 9, "#d9dbe3"); R(23, 18, 1, 9, "#d9dbe3");
+    R(18, 15, 4, 3, "#b98a68");
+    R(15, 4, 10, 11, "#d9a47e"); R(14, 8, 1, 3, "#b98a68"); R(25, 8, 1, 3, "#b98a68");
+    R(14, 2, 12, 3, "#1c1a1d"); R(14, 5, 2, 3, "#1c1a1d"); R(24, 5, 2, 3, "#1c1a1d"); R(14, 6, 1, 2, "#8d8d94"); R(25, 6, 1, 2, "#8d8d94");
+    R(16, 7, 4, 3, "#101218"); R(21, 7, 4, 3, "#101218"); R(17, 8, 2, 1, "#cfe3f3"); R(22, 8, 2, 1, "#cfe3f3"); R(20, 8, 1, 1, "#101218");
+    R(18, 8, 1, 1, INK); R(23, 8, 1, 1, INK); R(20, 10, 1, 2, "#b98a68"); R(18, 13, 4, 1, "#8a5a48");
+    R(14, 31, 12, 8, "#f5f0dc"); R(15, 33, 10, 1, "#b9b49a"); R(15, 35, 10, 1, "#b9b49a"); R(15, 37, 7, 1, "#b9b49a");
+    R(12, 32, 3, 3, "#d9a47e"); R(25, 32, 3, 3, "#d9a47e");
+  }
+
   function drawBG(ctx) {
     const R = (x, y, w, h, col) => { ctx.fillStyle = col; ctx.fillRect(x, y, w, h); };
     const line = (x0, y0, x1, y1, col) => { let dx = Math.abs(x1 - x0), dy = Math.abs(y1 - y0), sx = x0 < x1 ? 1 : -1, sy = y0 < y1 ? 1 : -1, e = dx - dy; for (;;) { R(x0, y0, 1, 1, col); if (x0 === x1 && y0 === y1) break; const e2 = 2 * e; if (e2 > -dy) { e -= dy; x0 += sx; } if (e2 < dx) { e += dx; y0 += sy; } } };
@@ -96,15 +115,15 @@
   }
 
   /* ---------- controlador ---------- */
-  const ctl = { ready: false, phase: "live", winner: null, tick: 0, token: 0, timers: [], loop: null, cv: {}, ctx: {} };
+  const ctl = { ready: false, phase: "live", winner: null, pause: false, tick: 0, token: 0, timers: [], loop: null, cv: {}, ctx: {} };
   const ov = { lula: null, flavio: null };
   const motionOK = () => !(root.matchMedia && root.matchMedia("(prefers-reduced-motion: reduce)").matches);
-  function pose(side) { if (ov[side]) return ov[side]; if (ctl.phase === "pre") return "pre"; if (ctl.phase === "final") { if (side === ctl.winner) return ctl.tick % 2 ? "cheer" : "strong"; return "final"; } return ctl.tick % 2 ? "idle1" : "idle0"; }
-  function redraw() { if (!ctl.ready) return; drawChar(ctl.ctx.lula, "lula", pose("lula")); drawChar(ctl.ctx.flavio, "flavio", pose("flavio")); }
+  function pose(side) { if (ctl.pause) return "pre"; if (ov[side]) return ov[side]; if (ctl.phase === "pre") return "pre"; if (ctl.phase === "final") { if (side === ctl.winner) return ctl.tick % 2 ? "cheer" : "strong"; return "final"; } return ctl.tick % 2 ? "idle1" : "idle0"; }
+  function redraw() { if (!ctl.ready) return; drawChar(ctl.ctx.lula, "lula", pose("lula")); drawChar(ctl.ctx.flavio, "flavio", pose("flavio")); if (ctl.ctx.zanin && ctl.pause) drawZanin(ctl.ctx.zanin, ctl.tick % 2); }
   function clearTimers() { ctl.timers.forEach(clearTimeout); ctl.timers = []; }
   function stopLoop() { if (ctl.loop) { clearInterval(ctl.loop); ctl.loop = null; } }
   function startLoop() {
-    stopLoop(); if (!ctl.ready || !motionOK() || (ctl.phase !== "live" && ctl.phase !== "final")) return;
+    stopLoop(); if (!ctl.ready || !motionOK() || !(ctl.pause || ctl.phase === "live" || ctl.phase === "final")) return;
     ctl.loop = setInterval(() => { const d = root.document; if (d && (d.hidden || !ctl.cv.lula.offsetParent)) return; ctl.tick++; redraw(); }, 600);
   }
   function init(doc) {
@@ -112,14 +131,15 @@
     try {
       ctl.cv = { bg: q("cvBG"), lula: q("cvLula"), flavio: q("cvFlavio") };
       for (const k in ctl.cv) { if (!ctl.cv[k]) throw new Error("canvas"); ctl.ctx[k] = ctl.cv[k].getContext("2d"); if (!ctl.ctx[k]) throw new Error("ctx"); }
-      drawBG(ctl.ctx.bg); ctl.ready = true; redraw(); startLoop();
+      const zc = q("cvZanin"); if (zc && zc.getContext) ctl.ctx.zanin = zc.getContext("2d"); drawBG(ctl.ctx.bg); ctl.ready = true; redraw(); startLoop();
     } catch (e) { if (root.console) console.warn("Arena16:", e && e.message); ctl.ready = false; const st = q("arenaStage"); if (st) st.classList.add("arena16-off"); }
   }
   function setPhase(ph) { if (ph === ctl.phase) { redraw(); startLoop(); return; } ctl.phase = ph; clearTimers(); ctl.token++; ov.lula = ov.flavio = null; redraw(); startLoop(); }
+  function setPause(on) { on = !!on; if (on === ctl.pause) return; ctl.pause = on; clearTimers(); ctl.token++; ov.lula = ov.flavio = null; redraw(); startLoop(); }
   function setWinner(who) { ctl.winner = who === "lula" || who === "flavio" ? who : null; redraw(); startLoop(); }
   /* ev = saída de TSECore.classify: {level:'none|light|strong|flip', who:'lula|flavio|null', milestone:number|null} */
   function play(ev) {
-    if (!ctl.ready || !motionOK() || !ev || ctl.phase !== "live") return;
+    if (!ctl.ready || ctl.pause || !motionOK() || !ev || ctl.phase !== "live") return;
     const tok = ++ctl.token; clearTimers(); ov.lula = ov.flavio = null;
     const who = ev.who, other = who === "lula" ? "flavio" : "lula";
     const set = (side, p) => { ov[side] = p; redraw(); };
@@ -130,5 +150,5 @@
     else if (who && ev.level === "flip") { set(who, "strong"); at(120, () => set(other, "hit")); at(700, () => { set(who, "cheer"); set(other, "idle0"); }); at(1900, end); }
     else if (ev.milestone) { set("lula", "guardHigh"); set("flavio", "guardHigh"); at(900, end); }
   }
-  return { init, setPhase, setWinner, play, SW, SH, BW, BH, _drawChar: drawChar, _drawBG: drawBG, _POSES: Object.keys(POSE) };
+  return { init, setPhase, setWinner, setPause, play, SW, SH, BW, BH, _drawChar: drawChar, _drawBG: drawBG, _POSES: Object.keys(POSE) };
 });

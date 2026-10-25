@@ -144,6 +144,21 @@ html[data-theme="light"]{--red:#c4202d;--blue:#1565c0}.tech-tab.active{backgroun
 .arena-exterior-source:hover{text-decoration:underline}
 @media(max-width:430px){.arena-exterior-scores{grid-template-columns:1fr}.arena-exterior-head{align-items:flex-start}.arena-exterior-pst{font-size:18px}.pre-country-grid{grid-template-columns:1fr}}
 
+/* ===== PRORROGAÇÃO DA VOTAÇÃO ===== */
+.ext-plaque{position:absolute;top:5%;left:50%;transform:translateX(-50%);z-index:7;max-width:92%;padding:6px 10px;background:#0b0d12;border:3px solid #f7d117;color:#f7d117;font:800 clamp(11px,3.2vw,15px)/1.25 ui-monospace,Menlo,Consolas,monospace;letter-spacing:.04em;text-align:center;box-shadow:3px 3px 0 #000}
+.ext-zanin{position:absolute;left:50%;bottom:4%;transform:translateX(-50%);width:clamp(84px,27%,160px);z-index:4;display:flex;flex-direction:column;align-items:center}
+.ext-zanin[hidden],.ext-plaque[hidden],.ext-box[hidden],.ext-resume[hidden]{display:none}
+.ext-zanin canvas{width:100%;aspect-ratio:40/48;height:auto}
+.ext-zanin .fighter-name{margin-top:2px;padding:2px 6px;background:rgba(5,9,18,.82);border:2px solid #f7d117;font:700 11px/1.2 ui-monospace,Menlo,Consolas,monospace;letter-spacing:.06em;text-transform:uppercase;box-shadow:2px 2px 0 #000;white-space:nowrap}
+.arena-shell[data-ext="on"] .impact-zone{display:none}
+.arena-shell[data-ext="on"] .arena-stage .fighter-aura{display:none}
+.arena-shell[data-ext="on"] .arena-stage:after{background:repeating-linear-gradient(0deg,rgba(0,0,0,.14) 0 1px,transparent 1px 3px),linear-gradient(rgba(5,9,18,.35),rgba(5,9,18,.35))}
+.ext-box{margin:12px 0 0;padding:12px 14px;border:2px solid #f7d117;border-radius:14px;background:rgba(247,209,23,.08);display:grid;gap:4px;text-align:center}
+.ext-box strong{font-size:14px;line-height:1.3}.ext-box span{font-weight:800;color:#f7d117}.ext-box small{font-size:11px;color:var(--muted)}
+.ext-resume{margin:12px 0 0;padding:12px 14px;border:2px solid var(--green);border-radius:14px;background:rgba(34,197,94,.12);font-weight:800;text-align:center;letter-spacing:.03em}
+.arena-stage.arena16-off .ext-zanin canvas{display:none}
+.arena-stage.arena16-off .ext-zanin:before{content:"";width:46%;aspect-ratio:1/2.4;margin-bottom:4px;border-radius:40% 40% 8% 8%/22% 22% 4% 4%;background:linear-gradient(180deg,#d9a47e 0 20%,#0b0d12 20% 100%)}
+
 </style>
 </head>
 <body>
@@ -219,7 +234,11 @@ html[data-theme="light"]{--red:#c4202d;--blue:#1565c0}.tech-tab.active{backgroun
           <div class="fighter fighter-right" id="fighterFlavio"><canvas id="cvFlavio" width="40" height="48" role="img" aria-label="Personagem em pixel art, lado de Flávio Bolsonaro"></canvas><div class="fighter-name">FLÁVIO <small>PL · 22</small></div></div>
           <div class="attack attack-left" id="attackLeft"><i class="pulse"></i></div>
           <div class="attack attack-right" id="attackRight"><i class="pulse"></i></div>
+          <div class="ext-plaque" id="extPlaque" hidden>VOTAÇÃO PRORROGADA ATÉ 19H</div>
+          <div class="ext-zanin" id="extZanin" hidden><canvas id="cvZanin" width="40" height="48" role="img" aria-label="Personagem em pixel art representando o ministro Cristiano Zanin"></canvas><div class="fighter-name">MIN. ZANIN</div></div>
         </div>
+        <div class="ext-box" id="extBox" hidden><strong>Decisão judicial — apuração suspensa até o novo encerramento</strong><span>Retomada da luta às <b id="extAt">19:00</b></span><small id="extSrc" hidden></small></div>
+        <div class="ext-resume" id="extResume" hidden>VOTAÇÃO ENCERRADA — APURAÇÃO RETOMADA</div>
 
         <div class="arena-bars">
           <div class="battle-bar battle-lula"><span>Lula</span><div class="battle-track"><i id="arenaBarLula"></i></div></div>
@@ -333,7 +352,8 @@ html[data-theme="light"]{--red:#c4202d;--blue:#1565c0}.tech-tab.active{backgroun
 
   <div id="tooltip" class="tooltip hidden"></div>
   <script src="./core.js?v=20261025-1308"></script>
-  <script src="./arena16.js?v=20261025-finalwinner1"></script>
+  <script src="./arena16.js?v=20261025-prorrogacao1"></script>
+  <script src="./prorrogacao.js?v=20261025-prorrogacao1"></script>
   <script src="./app-regions2.js?v=20261025-americas-wait2"></script>
 </body>
 </html>
