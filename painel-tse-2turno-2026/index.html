@@ -74,6 +74,8 @@ html[data-theme="light"]{--red:#c4202d;--blue:#1565c0}.tech-tab.active{backgroun
 /* EXTERIOR NA ARENA */
 .arena-exterior{margin-top:12px;padding:12px;border:1px solid #2b496a;border-radius:14px;background:linear-gradient(135deg,rgba(15,35,58,.92),rgba(9,20,35,.92));box-shadow:inset 0 0 0 1px rgba(255,255,255,.03)}
 .arena-exterior.waiting{opacity:.72}
+.arena-exterior.pretotal{border-color:#725d22;background:linear-gradient(135deg,rgba(52,42,16,.92),rgba(22,27,37,.94))}
+.arena-exterior.pretotal .arena-exterior-pst{color:#ffd166}
 .arena-exterior-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px}
 .arena-exterior-title{display:flex;align-items:center;gap:8px;min-width:0}
 .arena-exterior-globe{font-size:20px;line-height:1}
@@ -86,7 +88,13 @@ html[data-theme="light"]{--red:#c4202d;--blue:#1565c0}.tech-tab.active{backgroun
 .arena-exterior-cand strong{display:block;margin-top:3px;font-size:13px}
 .arena-exterior-cand.lula{border-left:3px solid var(--red)}.arena-exterior-cand.flavio{border-left:3px solid var(--blue)}
 .arena-exterior-meta{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:9px;color:var(--muted);font-size:10px}
-@media(max-width:430px){.arena-exterior-scores{grid-template-columns:1fr}.arena-exterior-head{align-items:flex-start}.arena-exterior-pst{font-size:18px}}
+ .pre-country-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;margin-top:10px}
+.pre-country{padding:7px 8px;border:1px solid rgba(255,255,255,.08);border-radius:9px;background:rgba(255,255,255,.025)}
+.pre-country strong{display:block;font-size:10px}
+.pre-country span{display:block;margin-top:2px;color:var(--muted);font-size:9px}
+.arena-exterior-source{display:inline-block;margin-top:9px;color:#ffd166;font-size:10px;font-weight:700;text-decoration:none}
+.arena-exterior-source:hover{text-decoration:underline}
+@media(max-width:430px){.arena-exterior-scores{grid-template-columns:1fr}.arena-exterior-head{align-items:flex-start}.arena-exterior-pst{font-size:18px}.pre-country-grid{grid-template-columns:1fr}}
 
 </style>
 </head>
@@ -171,14 +179,16 @@ html[data-theme="light"]{--red:#c4202d;--blue:#1565c0}.tech-tab.active{backgroun
 
         <section class="arena-exterior waiting" id="arenaExterior" aria-label="Apuração do voto no exterior">
           <div class="arena-exterior-head">
-            <div class="arena-exterior-title"><span class="arena-exterior-globe" aria-hidden="true">🌐</span><div><strong id="arenaExteriorStatus">Aguardando dados do exterior</strong><small>Votação fora do Brasil · dados oficiais do TSE</small></div></div>
+            <div class="arena-exterior-title"><span class="arena-exterior-globe" aria-hidden="true">🌐</span><div><strong id="arenaExteriorStatus">Aguardando dados do exterior</strong><small id="arenaExteriorSub">Votação fora do Brasil</small></div></div>
             <strong class="arena-exterior-pst" id="arenaExteriorPst">—</strong>
           </div>
           <div class="arena-exterior-scores">
             <div class="arena-exterior-cand lula"><span>Lula · 13</span><strong id="arenaExteriorLula">—</strong></div>
             <div class="arena-exterior-cand flavio"><span>Flávio · 22</span><strong id="arenaExteriorFlavio">—</strong></div>
           </div>
-          <div class="arena-exterior-meta"><span id="arenaExteriorDiff">Dados oficiais do TSE serão exibidos assim que disponíveis.</span><span id="arenaExteriorTime">TSE: —</span></div>
+          <div class="arena-exterior-meta"><span id="arenaExteriorDiff">Dados serão exibidos assim que disponíveis.</span><span id="arenaExteriorTime">—</span></div>
+          <div id="arenaPreCountries" class="pre-country-grid hidden"></div>
+          <a id="arenaExteriorSource" class="arena-exterior-source hidden" href="#" target="_blank" rel="noopener">Fonte dos boletins</a>
         </section>
 
         <div class="arena-disclaimer">As animações representam apenas variações verificadas nos dados oficiais. Não há projeções, probabilidades ou “dano” real.</div>
