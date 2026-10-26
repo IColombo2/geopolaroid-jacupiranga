@@ -1,18 +1,18 @@
 {
   "kind": "pretotalizacao-exterior",
   "election": "2026-2turno-presidente",
-  "updated_at": "2026-10-25T20:25:52-03:00",
+  "updated_at": "2026-10-25T22:33:46-03:00",
   "source": {
     "name": "TSE — totalização oficial do exterior (ZZ)",
     "url": "https://resultados.tse.jus.br/oficial/ele2026/6258/dados/zz/zz-c0001-e006258-u.json",
     "note": "Dados oficiais do Portal Resultados do TSE para a UF ZZ."
   },
   "totals": {
-    "lula": 145322,
-    "flavio": 102971,
-    "valid": 248293,
-    "lula_pct": 58.53,
-    "flavio_pct": 41.47
+    "lula": 200154,
+    "flavio": 171497,
+    "valid": 371651,
+    "lula_pct": 53.86,
+    "flavio_pct": 46.14
   },
   "locations": [
     {
@@ -107,7 +107,7 @@
   "posts_closed": 27,
   "posts_total": 186,
   "countries_count": 57,
-  "last_verified_at": "2026-10-25T20:25:52-03:00",
+  "last_verified_at": "2026-10-25T22:33:46-03:00",
   "verification_status": "Totalização oficial ZZ do TSE disponível; fontes jornalísticas passam a ser apenas conferência.",
   "verified_bulletins": [
     {
@@ -146,9 +146,9 @@
   "urns_total": 1282,
   "locations_complete": false,
   "official_snapshot": true,
-  "sections_done": 868,
+  "sections_done": 1351,
   "sections_total": 1351,
-  "sections_pct": 64.25,
+  "sections_pct": 100.0,
   "tse_generated_date": "25/10/2026",
-  "tse_generated_time": "20:24:45"
+  "tse_generated_time": "22:32:57"
 }
